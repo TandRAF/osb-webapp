@@ -1,0 +1,10 @@
+:root{
+    --backroundColor :F6F6F6;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--backroundColor);
+}

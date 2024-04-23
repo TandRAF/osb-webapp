@@ -1,0 +1,19 @@
+import './SCSS/App.scss';
+import {Routes, Route } from "react-router-dom";
+import {Home,AboutUs,Events,NoPage} from "./pages/Pages";
+import { Layout } from './Layout';
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="despre-noi" element={<AboutUs />} />
+        <Route path="evenimen@te" element={<Events />} />
+        <Route path="*" element={<NoPage />} />
+      </Route>
+    </Routes>
+  )
+}
+
+export default App
