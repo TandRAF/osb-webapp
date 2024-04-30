@@ -1,0 +1,74 @@
+@import "../../Base";
+.statistic-info-count{
+    background-color: $block-color-dark;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: conv(80px,160px,"xl") conv(50px,140px,"xl");
+    @include lg{
+        padding: conv(40px, 80px,"lg") conv(20px, 50px,"lg");
+        flex-wrap: wrap;
+        @include local-gap;
+        justify-content: center;
+    }
+    @include sm{
+        padding: 40px conv(20px, 50px,"sm");
+    } 
+    @include xs{
+        padding: 40px conv(0px, 20px,"xs");
+    }
+    .statistic-info{
+        display: flex;
+        flex-direction: column;
+        @include local-gap;
+        width: 350px;
+        @include lg{
+            align-items: center;
+        }
+        h2,p{
+            color: $backround-color;
+            @include lg{
+                text-align: center;
+            }
+        }
+    }
+    .statistic-count{
+        display: flex;
+        flex-direction: row;
+        gap: conv(10px,15px,"xl");
+        .statistic-count-info{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 40px;
+            align-items: center;
+            width: 120px;
+            height: 120px;
+            background-image: url("../../../assets/Icons/border.png");
+            background-size: cover;
+            @include sm{
+                width: conv(50px, 100px ,"sm");
+                height: conv(50px, 100px ,"sm");
+                padding: conv(20px, 40px, "sm");
+            }
+            span:nth-child(1){
+                @include font(75px, "Black", 100%);
+                color: $block-color;
+                @include sm{
+                    @include font(conv(32px,50px,"sm"), "Black", 100%);
+                    color: $block-color;
+                }
+                span{
+                    color: $backround-color;
+                }
+            }
+           h3{
+            @include font(conv(18px,24px,"sm"), "Black", 100%);
+            color:$backround-color;
+           }
+        }
+    }
+}

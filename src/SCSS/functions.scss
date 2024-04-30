@@ -1,14 +1,7 @@
-@function conv($max, $min) {
-    $v1: calc(1920px - 1440px);
-    $v2: calc($max - $min
-    );
-    $final:calc(100vw / (abs($v1) / abs($v2)));
-    @return $final;
-}
-@function conv2($max, $min){
-    $minDisplayWidth: 1440px;
-    $maxDisplayWidth: 1920px;
-    $minBlockWidth: $max;
-    $maxBlockWidth: $min;
-  @return calc($minBlockWidth + ((100vw - $minDisplayWidth) / ($maxDisplayWidth - $minDisplayWidth)) * ($maxBlockWidth - $minBlockWidth));
+@import 'Mixines';
+
+@function conv($min, $max, $key) {
+  $bg-width:map-get($breakpoints,$key);
+  $int : calc( ( $max / $bg-width ) * 100vw);
+  @return clamp($min, $int, $max);
 }

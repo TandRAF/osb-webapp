@@ -1,0 +1,97 @@
+@import "../../Base";
+
+.reviews-info-blocks{
+    margin: 40px conv(0px,100px,"xl");
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: conv(10px, 20px,"xl") conv(10px, 20px,"xl");
+    @include lg{
+        margin: 40px 0px;
+        grid-template-columns: 1fr 1fr;
+        gap: conv(10px, 40px,"lg") conv(10px, 40px,"lg");
+    }
+    @include sm{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .reviews-info{
+        grid-column: 1 / span 2;
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        height: fit-content;
+        @include local-gap;
+        gap: 20px 20px;
+        @include md{
+            align-items: center;
+            width: 100%;
+            h2,p{
+
+                text-align: center;
+
+            }
+        }
+        @include sm{
+            grid-column: 1;
+        }
+
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: $block-color-light;
+    width: conv(200px,280px,"xl");
+    height: fit-content;
+    padding: 40px;
+    border-radius: 5px;
+    box-sizing: content-box;
+    gap: 20px;
+    filter:drop-shadow(6px 10px 60px rgba(0.516,0.434,0,0.10));
+    @include lg{
+        width: fit-content;
+    }
+    &:nth-child(even){
+        margin-top: -40px;
+        @include lg{
+            margin: 0px;
+        }
+    }
+    &:nth-child(4){
+        margin-top: -160px;
+        @include lg{
+            margin: 0px;
+        }
+    }
+    &:nth-child(5){
+        margin-top: -200px;
+        @include lg{
+            margin: 0px;
+        }
+    }
+    @include sm{
+        
+    }
+    .card-name-status{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        .card-img{
+            width: 45px;
+            height: 45px;
+            background-size: cover;
+        }
+        .name-status{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            span:nth-child(1){
+                @include font(18px, "Bold", 110%);
+            }
+            span:nth-child(2){
+                @include font(16px, "Regular", 110%);
+            }
+        }
+    }
+}

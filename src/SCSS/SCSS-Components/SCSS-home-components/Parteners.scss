@@ -1,0 +1,25 @@
+@import "../../Base";
+.parteners-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        width: 700px;
+        @include md{
+            width: conv(500px, 700px,"md");
+        }
+        @include sm{
+            width: conv(375px, 500px,"sm");
+        }
+        @include xs{
+            width: conv(0px, 375px,"xs");
+        }
+    }
+}

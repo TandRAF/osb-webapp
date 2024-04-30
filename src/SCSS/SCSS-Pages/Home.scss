@@ -1,0 +1,7 @@
+@import "../Base.scss";
+.home-conatiner{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    @include global-gap;
+}

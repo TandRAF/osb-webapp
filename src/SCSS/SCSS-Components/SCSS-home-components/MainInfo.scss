@@ -1,0 +1,147 @@
+@import "../../Base";
+.main-content-block{
+    display: none;
+    margin: 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    height: fit-content;
+    align-items: center;
+    row-gap: 40px;
+    @include lg{
+        grid-template-columns: 480px 1fr;
+        grid-template-areas: 
+        'main-text main-img'
+        'more-info more-info';
+        justify-content: space-between;
+    }
+    @include md{
+        grid-template-columns: conv(400px,600px,"md");
+        grid-template-areas: 
+        'main-text ''main-img'
+        'more-info';
+        justify-content: space-between;
+        justify-content: center;
+    }
+    @include sm{
+        grid-template-columns: conv(0px,620px,"sm");
+    }
+    .main-text{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        @include lg{
+            grid-area: main-text;
+        }
+        @include md{
+            align-items: center;
+        }
+        @include local-gap;
+        .main-text-h1-svg{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @include md{
+                align-items: center;
+            }
+        }
+        @include md{
+            justify-content: center;
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        .main-buttons{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            a:nth-child(1){
+                @include button-nr1;
+            }
+            a:nth-child(2){
+                @include button-nr2;
+            }
+        }
+    }
+    .main-img{
+        background-image: url("../../../assets/Icons/main-img.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: conv(500px,610px,"xl");
+        @include lg{
+            grid-area: main-img;
+            background-size: auto 100%;
+            height: conv(300px,500px,"lg");
+        }
+        @include sm{
+            height: conv(300px,700px,"sm");
+        }
+    }
+    .main-more-info{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        @include local-gap;
+        @include lg{
+            grid-area: more-info;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @include md{
+            grid-template-columns: 1fr;
+        }
+        .main-scope-info{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: max-content;
+            @include lg{
+                align-items: center;
+            }
+            @include md{
+                align-items: center;
+            }
+            @include lg{
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        }
+        .main-parteners-info{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: start;
+            height: max-content;
+            @include lg{
+                align-items: center;
+            }
+            @include md{
+                justify-content: center;
+            }
+            svg{
+                display: none;
+                @include lg{
+                    display: block;
+                }
+                @include md{
+                    display: none;
+                }
+            }
+            @include lg{
+                h3{
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+}
