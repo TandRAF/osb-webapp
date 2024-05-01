@@ -11,16 +11,16 @@ header{
     .nav-burger{
         display: none;
         flex-direction: column;
-        gap: 15px;
-        justify-content: flex-end;
-        align-items: end;
+        gap: 10px;
+        justify-content: center;
+        align-items: flex-end;
         span{
             height: 0;
-            width: 60px;
+            width: 42px;
             border: solid 2px $block-color-dark;
             border-radius: 5px;
             &:nth-child(1), &:nth-child(3){
-                width: 42px;
+                width: 32px;
             }
         }
         @include sm{
@@ -32,6 +32,7 @@ header{
         display: flex;
         align-items: center;
         gap: 20px;
+        transition: all 0.5s ease-out;
         svg{
             display: none
         }
