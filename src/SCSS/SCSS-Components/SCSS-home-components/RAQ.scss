@@ -62,6 +62,13 @@
                     @include lg{
                         width: 80%;
                     }
+                    @include sm{
+                        width: 100%;
+                        &.chat-text{
+
+                            @include font(conv(14px,20px,"sm"),"Regular", 150%);
+                        }
+                    }
                 }
                 @include md{
                     gap: conv(10px, 20px, "md");
@@ -112,6 +119,10 @@
                         @include lg{
                             width: 80%;
                         }
+                        @include sm{
+                            width: 100%;
+                            @include font(conv(14px,20px,"sm"),"Regular", 150%);
+                        }
 
                     }
                     @include md{
@@ -161,8 +172,11 @@
         background-size: cover;
     }
     @include md{
-        width: 60px;
-        height: 60px;
+        width: conv(40px,60px,"md");
+        height: conv(40px,60px,"md");
+    }
+    @include sm{
+        display: none;
     }
 }
 .a-icon{
@@ -176,8 +190,11 @@
         margin: -60px 0 0 10px;
     }
     @include md{
-        width: 60px;
-        height: 60px;
+        width: conv(40px,60px,"md");
+        height: conv(40px,60px,"md");
+    }
+    @include sm{
+        display: none;
     }
     margin-bottom: 20px;
     background-image: url("../../../assets/Images/photo.png");

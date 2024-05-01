@@ -1,8 +1,13 @@
 import "../../SCSS/SCSS-Components/SCSS-home-components/Reviews.scss"
 import { Stars,Quotes } from "../../assets/Icons/Icons"
 import { reviewItems } from "../../assets/content"
+import { useState,useEffect } from "react"
 
 export const Reviews = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+    useEffect(()=>{
+        setWidth(window.innerWidth);
+    })
   return (
     <>
         <section className="reviews-info-blocks">
