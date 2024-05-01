@@ -1,19 +1,67 @@
 @import '../Base';
-nav{
+header{
     display: flex;
     gap: 40px;
+    @include sm{
+        justify-content: space-between;
+    }
     .logo-container{
         margin: 0;
     }
-    ul{
+    .nav-burger{
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: flex-end;
+        align-items: end;
+        span{
+            height: 0;
+            width: 60px;
+            border: solid 2px $block-color-dark;
+            border-radius: 5px;
+            &:nth-child(1), &:nth-child(3){
+                width: 42px;
+            }
+        }
+        @include sm{
+            display: flex;
+        }
+    }
+    nav{
         padding: 0;
         display: flex;
         align-items: center;
         gap: 20px;
-        li{
-            list-style: none;
+        svg{
+            display: none
+        }
             a{
                 @include nav-button;
+            }
+        @include sm{
+            svg{
+                display: block;
+            }
+            width: 80vw;
+            height: 100vh;
+            background-color: $block-color-light;
+            position: fixed;
+            position: -webkit-fixed;
+            overflow: hidden;
+            flex-direction: column;
+            padding: 10vw;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            justify-content: start;
+            transform: translateX(-400px);
+            z-index: 1030;
+            a{
+                width: 100%;
+                padding:20px 40px;
+            }
+            &.active{
+                transform: translateX(0px);
             }
         }
     }

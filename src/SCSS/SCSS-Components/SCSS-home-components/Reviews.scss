@@ -5,7 +5,7 @@
     display: grid;
     justify-content: space-around;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: conv(10px, 20px,"xl") conv(10px, 20px,"xl");
+    gap: conv(10px, 30px,"xl") conv(10px, 20px,"xl");
     @include lg{
         margin: 40px 0px;
         grid-template-columns: 1fr 1fr;
@@ -41,13 +41,13 @@
 .card{
     display: flex;
     flex-direction: column;
-    background-color: $block-color-light;
-    width: conv(200px,280px,"xl");
+    width: conv(200px,250px,"xl");
     height: fit-content;
     padding: 40px;
     border-radius: 5px;
     box-sizing: content-box;
     gap: 20px;
+    background-color: $block-color-light;
     filter:drop-shadow(6px 10px 60px rgba(0.516,0.434,0,0.10));
     @include lg{
         width: fit-content;
@@ -71,7 +71,7 @@
         }
     }
     @include sm{
-        
+
     }
     .card-name-status{
         display: flex;

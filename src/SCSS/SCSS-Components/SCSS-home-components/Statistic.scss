@@ -49,6 +49,7 @@
             height: 120px;
             background-image: url("../../../assets/Icons/border.png");
             background-size: cover;
+            box-sizing: content-box;
             @include sm{
                 width: conv(50px, 100px ,"sm");
                 height: conv(50px, 100px ,"sm");

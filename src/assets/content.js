@@ -86,3 +86,30 @@ export const menuItem = [
       img: "photo.png"
     }
   ]
+  export const questionAnswers = [
+    {
+      key: 1,
+      question:"Cum pot deveni membru al organizație i?",
+      answer: "Pentru a deveni membru al organizației noastre, vă rugăm să completați  formularul de înscriere disponibil pe site-ul nostru sau să ne  contactați pentru mai multe informații. Vom fi bucuroși să vă oferim  detalii suplimentare despre avantajele membrilor și procedurile de  înscriere."
+    },
+    {
+      key: 2,
+      question:"Ce proiecte sunt disponibile pentru voluntariat ?",
+      answer: "vă rugăm să completați  formularul"
+    },
+    {
+      key: 3,
+      question:"Care sunt modalitățile de plată acceptate pentru donații ?",
+      answer: "vă rugăm să completați  formularul"
+    },
+    {
+      key: 4,
+      question:"Cum pot raporta o problemă sau oferi feedback ?",
+      answer: "vă rugăm să completați  formularul"
+    },
+    {
+      key: 5,
+      question:"Cum pot raporta o problemă sau oferi feedback ?",
+      answer: "vă rugăm să completați  formularul"
+    },
+  ]

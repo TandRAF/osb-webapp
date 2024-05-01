@@ -85,7 +85,7 @@ $font-weight-map: (
     font-size: conv(18px,20px,"xl");
     line-height: 100%;
     color: $font-color;
-    background-color: $backround-color;
+    background-color:transparent;
     padding: conv(10px,15px,"xl") conv(20px,40px,"xl");
     border-radius: 5px;
     text-decoration: none;
@@ -114,7 +114,7 @@ $font-weight-map: (
     font-size: conv(18px,20px,"xl");
     line-height: 100%;
     color: $font-color;
-    background-color: $backround-color;
+    background-color: transparent;
     padding: 10px 20px;
     border-radius: 5px;
     text-wrap: nowrap;
@@ -123,17 +123,20 @@ $font-weight-map: (
     width: fit-content;
     transition: all 0.5s ease-out;
     box-sizing: border-box;
+    @include sm{
+        font-size:20px;
+    }
     @include xs{
-        font-size: conv(0px,18px,"xs");
+        font-size: conv(18px,20px,"xs");
         padding: conv(0px,10px,"xs") conv(0px,20px,"xs");
     }
     &:hover{
         color: $backround-color;
-        background-color: $block-color-hover;
+        background-color: $block-color-dark;
     }
     &.active{
         color: $backround-color;
-        background-color: $block-color-hover;
+        background-color: $block-color-dark;
     }
 }
 @mixin global-margin{
@@ -158,8 +161,8 @@ $font-weight-map: (
     }  
 }
 @mixin global-gap{
-    gap: 160px;
+    gap: 320px;
     @include sm{
-        gap: conv(80px,160px, "sm");
+        gap: conv(80px,320px, "md");
     }
 }

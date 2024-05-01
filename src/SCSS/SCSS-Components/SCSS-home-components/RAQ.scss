@@ -1,0 +1,184 @@
+@import "../../Base.scss";
+
+.question-answer-section{
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 40px;
+    margin-bottom:80px;
+    align-items: center;
+    justify-content: center;
+    @include lg{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .q-a-chat{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        @include lg{
+            width: conv(670px, 1000px,"lg");
+        }
+        @include md{
+            width: 90%;
+        }
+        .question-answer{
+            display: flex;
+            flex-direction: column;
+            transition: all 0.5s ease-out;
+            gap: 0px; 
+            width: 100%;
+            &.active{
+                gap: 20px; 
+                .p-answer{
+                    display: flex;
+                    opacity: 1;
+                }
+                .q-icon{
+                    background-image: url("../../../assets/Images/question-icon.png");
+                    background-size: cover;
+                }
+                .answer{
+                    transform: translateX(100px);
+                }
+            }     
+            .question{
+                display: flex;
+                gap: 20px;
+                justify-content: flex-start;
+                align-items: start;
+                width: 100%;
+                p{
+                    width: 600px;
+                    cursor: pointer;
+                    background-color: $block-color-light;
+                    filter:drop-shadow(6px 10px 60px rgba(0.516,0.434,0,0.10));
+                    padding: 25px 20px;
+                    border-radius: 30px 30px 30px 0;
+                    @include font(20px,"Regular", 150%);
+                    @include lg{
+                        width: 80%;
+                    }
+                }
+                @include md{
+                    gap: conv(10px, 20px, "md");
+                    p{
+                        font-size: 18px;
+                        padding: conv(20px,25px,"md") conv(15px, 20px,"md");
+                    }
+                }
+            }  
+            div{
+                transition: all 0.3s ease-out;
+            }
+            .p-answer{
+                display: flex;
+                flex-direction: column;
+                gap: 20px; 
+                opacity: 0;
+                transition: all 0.5s ease-out;
+                @include sm{
+                    gap: conv(15px, 20px, "sm")
+                }
+                p{
+                    text-align: center;
+                    overflow: hidden;
+                }
+                .answer{
+                    gap: 20px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: end;
+                    opacity: 0;
+                    transition: all 0.5s ease-out;
+                    transform: translateX(100px);
+                    &.active{
+                        opacity: 1;
+                        transform: translateX(0px);
+                    }
+                    p{
+                        width: 600px;
+                        background-color: $block-color;
+                        filter:drop-shadow(6px 10px 60px rgba(0.516,0.434,0,0.10));
+                        padding: 25px 20px;
+                        border-radius: 30px 30px 0 30px;
+                        @include font(20px,"Regular", 150%);
+                        margin-bottom: 20px;
+                        overflow: hidden;
+                        text-align: left;
+                        @include lg{
+                            width: 80%;
+                        }
+
+                    }
+                    @include md{
+                        gap: conv(10px, 20px, "md");
+                        p{
+                            font-size: 18px;
+                            padding: conv(20px,25px,"md") conv(15px, 20px,"md");
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .q-a-info{
+        @include local-gap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include lg{
+            p{
+                width: conv(400px, 600px, "lg");
+            }
+        }
+        @include sm{
+            p{
+                width: 80%;
+            }
+        }
+        h2,p{
+            text-align: center;
+        }
+        a{
+            @include button-nr1;
+        }
+    }
+}
+.q-icon{
+    width: 78px;
+    height: 78px;
+
+    background-size: cover;
+    display: inline-block;
+    white-space: nowrap;
+    background: transparent;
+    &.active{
+        background-image: url("../../../assets/Images/question-icon.png");
+        background-size: cover;
+    }
+    @include md{
+        width: 60px;
+        height: 60px;
+    }
+}
+.a-icon{
+    width: 78px;
+    height: 78px;
+    background-size: cover;
+    display: inline-block;
+    white-space: nowrap;
+    svg{
+        position: absolute;
+        margin: -60px 0 0 10px;
+    }
+    @include md{
+        width: 60px;
+        height: 60px;
+    }
+    margin-bottom: 20px;
+    background-image: url("../../../assets/Images/photo.png");
+}

@@ -1,12 +1,13 @@
 {
   "name": "osb-webapp",
   "private": true,
-  "homepage": "https://gitname.github.io/osb",
+  "homepage": "https://github.com/TandRAF/osb-webapp",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

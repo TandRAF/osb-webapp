@@ -8,7 +8,7 @@ export const Statistic = () => {
     <section className="statistic-info-count">
         <div className="statistic-info">
             <Crown/>
-            <h2>Comunitatea Noastra devine mai buna cu voi</h2>
+            <h2>Comunitatea Noastra devine mai buna cu <b>voi</b></h2>
             <p>De-a lungul anilor, comunitatea noastră a crescut și s-a dezvoltat într-o rețea puternică și solidară.</p>
         </div>
         <div className="statistic-count">

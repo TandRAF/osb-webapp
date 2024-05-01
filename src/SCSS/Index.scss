@@ -5,4 +5,11 @@ body{
     overflow-x: hidden;
     background-color: $backround-color;  
     @include global-margin;
+    background-image: url("../assets/Images/main-bg.png");
+    background-size: 100%;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+}
+*{
+    box-sizing: border-box;
 }

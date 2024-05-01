@@ -8,7 +8,7 @@ export const Reviews = () => {
         <section className="reviews-info-blocks">
             <div className="reviews-info">
                 <Stars/>
-                <h2>Ce spun membrii noștri ?</h2>
+                <h2>Ce spun <b>membrii</b> noștri ?</h2>
                 <p>Părerile și experiențele membrilor noștri sunt fundamentale pentru noi.  Iată ce au de spus despre implicarea lor în comunitatea noastră.  Feedback-ul lor ne inspiră și ne motivează să continuăm să creștem și să  dezvoltăm proiectele noastre, pentru a aduce beneficii reale membrilor  noștri și comunității în ansamblu.</p>
             </div>
             {reviewItems.map((item,index)=>{
