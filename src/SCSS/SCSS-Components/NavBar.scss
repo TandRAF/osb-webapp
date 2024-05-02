@@ -64,6 +64,7 @@ header{
                 @include nav-button;
             }
         @include sm{
+            filter:drop-shadow(6px 10px 60px rgba(0.516,0.434,0,0.10));
             div{
                 display: flex;
                 width: 100%;
