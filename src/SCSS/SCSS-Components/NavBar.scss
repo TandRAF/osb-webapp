@@ -10,18 +10,34 @@ header{
     }
     .nav-burger{
         display: none;
+        cursor: pointer;
         flex-direction: column;
         gap: 10px;
         justify-content: center;
         align-items: flex-end;
+        &.active{
+            span{
+                &:nth-child(1), &:nth-child(2),&:nth-child(3){
+                    width: 0px;
+                    opacity: 0;
+                }
+            }
+        }
         span{
             height: 0;
             width: 42px;
+            transition: all 0.5s ease-out;
+            opacity: 1;
             border: solid 2px $block-color-dark;
             border-radius: 5px;
             &:nth-child(1), &:nth-child(3){
+                transition-delay: 0.2s;
                 width: 32px;
             }
+            &:nth-child(1){
+                transition-delay: 0.3s;
+            }
+            
         }
         @include sm{
             display: flex;
@@ -33,15 +49,36 @@ header{
         align-items: center;
         gap: 20px;
         transition: all 0.5s ease-out;
-        svg{
-            display: none
+        div{
+            display: none;
+            div{
+
+                svg{
+                    width: 55px;
+                    height: 55px;
+                }
+            }
         }
             a{
+
                 @include nav-button;
             }
         @include sm{
-            svg{
-                display: block;
+            div{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                div{
+                    width: fit-content;
+                    cursor: pointer;
+                    svg{
+                        background-color: $block-color-dark;
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+                }
             }
             width: 80vw;
             height: 100vh;
@@ -55,11 +92,11 @@ header{
             top: 0;
             bottom: 0;
             justify-content: start;
-            transform: translateX(-400px);
+            transform: translateX(-80vw);
             z-index: 1030;
             a{
                 width: 100%;
-                padding:20px 40px;
+                padding:15px 20px;
             }
             &.active{
                 transform: translateX(0px);

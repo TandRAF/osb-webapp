@@ -3,6 +3,30 @@ import { Stars,Quotes } from "../../assets/Icons/Icons"
 import { reviewItems } from "../../assets/content"
 import { useState,useEffect } from "react"
 
+// const showCards = (items) => {
+//     return(
+//         <>
+//             {items.map((item,index)=>{
+//             return(
+//                 <div key={index} className="card">
+//                     <Quotes/>
+//                     <p>{item.text}</p>
+//                     <div className="card-name-status">
+//                         <div style={{ backgroundImage: `url("src/assets/Images/${item.img}")` }} className="card-img">
+    
+//                         </div>
+//                         <div className="name-status">
+//                             <span>{item.name}</span>
+//                             <span>{item.status}</span>
+//                         </div>
+//                     </div>
+//                 </div>
+//             )
+//             })}
+//         </>
+//     )
+// }
+
 export const Reviews = () => {
     const [width, setWidth] = useState(window.innerWidth);
     useEffect(()=>{
