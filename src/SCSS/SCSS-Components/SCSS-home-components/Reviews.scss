@@ -39,16 +39,18 @@
     }
 }
 .card-box{
-    overflow-x: hidden;
-    width: 80vw;
+    width: 100%;
     .box{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        display: flex;
+        width: fit-content;
         flex-direction: row;
         gap: 20px;
+        scroll-snap-type: x mandatory;
     }
 }
 .card{
+    scroll-snap-align: start;
+    scroll-padding: 0 24px;
     display: flex;
     flex-direction: column;
     width: conv(200px,250px,"xl");
@@ -81,7 +83,7 @@
         }
     }
     @include sm{
-        width: 100vw;
+        width: 60vw;
     }
     .card-name-status{
         display: flex;

@@ -151,6 +151,18 @@ $font-weight-map: (
         margin: 40px conv(0px, 20px,"xs");
     }
 }
+@mixin global-padding{
+    padding: 40px conv(50px,150px,"xl");
+    @include lg{
+        padding: 40px 50px;
+    }
+    @include sm{
+        padding: 40px conv(20px, 50px,"sm");
+    } 
+    @include xs{
+        padding: 40px conv(0px, 20px,"xs");
+    }
+}
 @mixin local-gap{
     gap: 20px;
     @include lg{

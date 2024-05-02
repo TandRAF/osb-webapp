@@ -4,12 +4,12 @@ html{
 }
 body{
     background-color: $backround-color;  
-    @include global-margin;
+    @include global-padding;
     background-image: url("../assets/Images/main-bg.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    position: relative;
-    overflow-x: hidden;
+    box-sizing: content-box;
+    overflow: hidden;
 }
 *{
     box-sizing: border-box;
