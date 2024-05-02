@@ -12,7 +12,7 @@
         gap: conv(10px, 40px,"lg") conv(10px, 40px,"lg");
     }
     @include sm{
-        grid-template-columns: 1fr;
+        grid-template-columns: 90vw;
         gap: 20px;
     }
     .reviews-info{
@@ -36,6 +36,16 @@
             grid-column: 1;
         }
 
+    }
+}
+.card-box{
+    overflow-x: hidden;
+    width: 80vw;
+    .box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        flex-direction: row;
+        gap: 20px;
     }
 }
 .card{
@@ -71,7 +81,7 @@
         }
     }
     @include sm{
-
+        width: 100vw;
     }
     .card-name-status{
         display: flex;
