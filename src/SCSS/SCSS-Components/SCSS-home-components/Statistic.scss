@@ -43,8 +43,9 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            padding: 40px;
+            padding: conv(30px, 40px, "xl");
             align-items: center;
+            justify-content: center;
             width: 120px;
             height: 120px;
             background-image: url("../../../assets/Icons/border.png");
@@ -56,7 +57,7 @@
                 padding: conv(20px, 40px, "sm");
             }
             span:nth-child(1){
-                @include font(75px, "Black", 100%);
+                @include font(conv(50px, 75px,"xl"), "Black", 100%);
                 color: $block-color;
                 @include sm{
                     @include font(conv(32px,50px,"sm"), "Black", 100%);
@@ -67,8 +68,11 @@
                 }
             }
            h3{
-            @include font(conv(18px,24px,"sm"), "Black", 100%);
+            @include font(conv(10px,24px,"sm"), "Black", 100%);
             color:$backround-color;
+            @include sm{
+                @include font(conv(10px,24px,"sm"), "SemiBold", 100%);
+            }
            }
         }
     }

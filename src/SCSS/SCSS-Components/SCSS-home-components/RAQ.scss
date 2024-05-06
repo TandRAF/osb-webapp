@@ -31,18 +31,30 @@
             transition: all 0.5s ease-out;
             gap: 0px; 
             width: 100%;
+            @include sm{
+                transition: none;
+            }
             &.active{
                 gap: 20px; 
                 .p-answer{
                     display: flex;
                     opacity: 1;
+                    @include sm{
+                        transition: none;
+                    }
                 }
                 .q-icon{
                     background-image: url("../../../assets/Images/question-icon.png");
                     background-size: cover;
+                    @include sm{
+                        transition: none;
+                    }
                 }
                 .answer{
                     transform: translateX(100px);
+                    @include sm{
+                        transition: none;
+                    }
                 }
             }     
             .question{
@@ -80,6 +92,9 @@
             }  
             div{
                 transition: all 0.3s ease-out;
+                @include sm{
+                    transition: none;
+                }
             }
             .p-answer{
                 display: flex;
@@ -102,6 +117,9 @@
                     opacity: 0;
                     transition: all 0.5s ease-out;
                     transform: translateX(100px);
+                    @include sm{
+                        transition: none;
+                    }
                     &.active{
                         opacity: 1;
                         transform: translateX(0px);
@@ -120,6 +138,7 @@
                             width: 80%;
                         }
                         @include sm{
+                            transition: none;
                             width: 100%;
                             @include font(conv(14px,20px,"sm"),"Regular", 150%);
                         }

@@ -157,10 +157,10 @@ $font-weight-map: (
         padding: 40px 50px;
     }
     @include sm{
-        padding: 40px conv(20px, 50px,"sm");
+        padding: 20px conv(20px, 50px,"sm");
     } 
     @include xs{
-        padding: 40px conv(0px, 20px,"xs");
+        padding: 10px conv(0px, 20px,"xs");
     }
 }
 @mixin local-gap{
