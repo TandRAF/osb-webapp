@@ -72,6 +72,7 @@
             color:$backround-color;
             @include sm{
                 @include font(conv(10px,24px,"sm"), "SemiBold", 100%);
+                color:$backround-color;
             }
            }
         }
