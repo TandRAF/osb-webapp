@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     box-sizing: content-box;
     overflow: hidden;
+    margin: 0px;
     @include md{
         background: transparent;
     }

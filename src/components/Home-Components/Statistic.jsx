@@ -1,8 +1,6 @@
 import { Crown } from "../../assets/Icons/Icons";
 import "../../SCSS/SCSS-Components/SCSS-home-components/Statistic.scss";
-
 export const Statistic = () => {
-
   return (
     <>
     <section className="statistic-info-count">

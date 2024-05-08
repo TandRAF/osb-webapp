@@ -45,7 +45,7 @@
         width: fit-content;
         flex-direction: row;
         gap: 20px;
-        scroll-snap-type: x mandatory;
+        transition: all .5s ease-out;
     }
 }
 .card{
