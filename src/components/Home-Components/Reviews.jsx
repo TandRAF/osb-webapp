@@ -74,11 +74,12 @@ export const Reviews = () => {
                 <p>Părerile și experiențele membrilor noștri sunt fundamentale pentru noi.  Iată ce au de spus despre implicarea lor în comunitatea noastră.  Feedback-ul lor ne inspiră și ne motivează să continuăm să creștem și să  dezvoltăm proiectele noastre, pentru a aduce beneficii reale membrilor  noștri și comunității în ansamblu.</p>
             </div>
             {(width > 768) ? <>{showCards(reviewItems)}</>:<> 
-            <div className="card-box" >
+            <div
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            className="card-box" >
                 <div
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
-                onTouchEnd={handleTouchEnd}
                 style={
                     {transform: `translateX(-${cardIndex*(cardWidth + 20)}px)`}
                 }

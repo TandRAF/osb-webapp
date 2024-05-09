@@ -1,7 +1,7 @@
 @import "../../Base";
 
 .reviews-info-blocks{
-    margin: 40px conv(0px,100px,"xl");
+    margin: 40px conv(0px,50px,"xl");
     display: grid;
     justify-content: space-around;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -53,14 +53,17 @@
     scroll-padding: 0 24px;
     display: flex;
     flex-direction: column;
-    width: conv(200px,250px,"xl");
+    width: conv(200px,300px,"xl");
     height: fit-content;
-    padding: 40px;
+    padding: conv(20px, 40px, "xl");
     border-radius: 5px;
     box-sizing: content-box;
     gap: 20px;
     background-color: $block-color-light;
     filter:drop-shadow(6px 10px 60px rgba(0.516,0.434,0,0.10));
+    p{
+        @include font(conv(18px,20px,"xl"), "Regular", 150%)
+    }
     @include lg{
         width: fit-content;
     }
