@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import "./SCSS/Index.scss";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename='/osb-webapp'>
+  <BrowserRouter basename='osb'>
     <React.StrictMode>
       <App />
     </React.StrictMode>

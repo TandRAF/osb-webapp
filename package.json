@@ -1,5 +1,5 @@
 {
-  "name": "osb-webapp",
+  "name": "osb",
   "private": true,
   "homepage": "https://github.com/TandRAF/osb-webapp",
   "version": "0.0.0",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "firebase": "^10.11.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-spring": "^9.7.3",

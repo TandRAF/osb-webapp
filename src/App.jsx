@@ -3,6 +3,7 @@ import {Routes, Route } from "react-router-dom";
 import {Home,AboutUs,Events,NoPage,Contacte} from "./pages/Pages";
 import { Layout } from './Layout';
 
+
 function App() {
   return (
     <Routes>

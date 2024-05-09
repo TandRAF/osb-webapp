@@ -1,8 +1,28 @@
+import { useEffect, useState } from "react";
 import { Crown } from "../../assets/Icons/Icons";
 import "../../SCSS/SCSS-Components/SCSS-home-components/Statistic.scss";
+function Counter({ targetNumber }) {
+    const [count, setCount] = useState(0);
+  
+    useEffect(() => {
+        const increment = () => {
+            if (count < targetNumber && targetNumber <100) {
+                setCount(prevCount => prevCount + 1);
+            }else if (count < targetNumber && targetNumber >=100) {
+                setCount(prevCount => prevCount + 10);
+            }
+        }; 
+        const timer = setTimeout(increment, 50); // Adjust the interval as needed
+        return () => clearTimeout(timer);
+    }, [count, targetNumber]);
+
+    let countNumber = Math.ceil(Math.log10(count + 1));
+    console.log( count," nr1 " + Math.floor(count/Math.pow(10,countNumber-1))," nr2 " + count%Math.pow(10,countNumber-1));
+    return <span><span>{Math.floor(count/Math.pow(10,countNumber-1))}</span>{count%Math.pow(10,countNumber-1)}</span>;
+}
 export const Statistic = () => {
-  return (
-    <>
+    return (
+        <>
     <section className="statistic-info-count">
         <div className="statistic-info">
             <Crown/>
@@ -11,15 +31,15 @@ export const Statistic = () => {
         </div>
         <div className="statistic-count">
             <div className="statistic-count-info">
-                <span> <span>2</span>00</span>
+            <Counter targetNumber={250}/>
                 <h3>Membrii</h3>
             </div>
             <div className="statistic-count-info">
-                <span> <span>1</span>1</span>
+            <Counter targetNumber={11}/>
                 <h3>Proiecte</h3>
             </div>
             <div className="statistic-count-info">
-                <span> <span>2</span>3</span>
+            <Counter targetNumber={23}/>
                 <h3>Ani</h3>
             </div>
         </div>
