@@ -67,7 +67,7 @@
         }
     }
     .main-img{
-        background-image: url("../../../assets/Icons/main-img.png");
+        background-image: url("../../../assets/Images/main-img.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -121,6 +121,28 @@
             gap: 20px;
             justify-content: start;
             height: max-content;
+            .parteners-logos{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                img{
+                    width: auto;
+                    height: 40px;
+                    @include md{
+                        height: conv(40px, 60px, "md");
+                    }
+                    @include sm{
+                        height: conv(40px, 60px, "sm");
+                    }
+                }
+                @include sm{
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
             @include lg{
                 align-items: center;
             }

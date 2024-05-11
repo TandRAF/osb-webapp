@@ -1,6 +1,10 @@
 import { Crown,Stars } from "../../assets/Icons/Icons"
 import { Link } from "react-router-dom"
 import "../../SCSS/SCSS-Components/SCSS-home-components/MainInfo.scss"
+import Anosr from "../../assets/Images/Companies/LogoANOSR.png"
+import COSPol from "../../assets/Images/Companies/LogoCOSPol.png"
+import FITT from "../../assets/Images/Companies/LogoFITT.png"
+import FTB from "../../assets/Images/Companies/LogoFTB.png"
 
 export const MainInfo = () => {
   return (
@@ -23,7 +27,8 @@ export const MainInfo = () => {
           <Link to="/despre-noi">Mai multe detalii</Link>
         </div>
       </section>
-      <section className="main-img"></section>
+      <section className="main-img">
+      </section>
       <section className="main-more-info">
         <div className="main-scope-info">
           <Stars/>
@@ -39,7 +44,10 @@ export const MainInfo = () => {
         <Stars/>
           <h3>Facem <b>parte</b> din</h3>
           <div className="parteners-logos">
-
+              <img src={Anosr} alt="ANOSR" />
+              <img src={COSPol} alt="COSPol" />
+              <img src={FITT} alt="FITT" />
+              <img src={FTB} alt="FTB" />
           </div>
         </div>
       </section>
