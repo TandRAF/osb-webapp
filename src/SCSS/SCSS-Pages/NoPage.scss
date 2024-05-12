@@ -1,0 +1,16 @@
+@import "../Base.scss";
+
+.error-container{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    h1:nth-child(odd){
+        color: $block-color;
+    }
+
+}

@@ -41,7 +41,7 @@ export const Statistic = () => {
         </div>
         <div className="statistic-count">
             <div className="statistic-count-info">
-                <Counter targetNumber={23}/>
+                <Counter targetNumber={210}/>
                 <h3>Membrii</h3>
             </div>
             <div className="statistic-count-info">
@@ -49,7 +49,7 @@ export const Statistic = () => {
                 <h3>Proiecte</h3>
             </div>
             <div className="statistic-count-info">
-            <Counter targetNumber={210}/>
+            <Counter targetNumber={23}/>
                 <h3>Ani</h3>
             </div>
         </div>

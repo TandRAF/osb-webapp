@@ -34,10 +34,7 @@ export const MainInfo = () => {
           <Stars/>
           <h3><b>Scopul</b> nostru </h3>
           <p>
-            este să oferim suport și sprijin membrilor
-             noștri în adaptarea la mediul academic și 
-             social din Timișoara, facilitându-le integrarea 
-             și dezvoltarea personală și profesională.
+          Scopul principal al OSB Timișoara este integrarea și reprezentarea tinerilor din Republica Moldova, veniți la studii în Timișoara prin organizarea proiectelor de ordin cultural, educativ și divertisment.
           </p>
         </div>
         <div className="main-parteners-info">

@@ -27,19 +27,19 @@ export const menuItem = [
       key: 1,
       title: "Instagram",
       Icon: Instagram,
-      link: "/"
+      link: "https://www.instagram.com/osbtimisoara/?hl=en"
     },
     {
       key: 2,
       title: "Facebook",
       Icon: Facebook,
-      link: "/despre-noi"
+      link: "https://www.facebook.com/osbtimisoara/?locale=ro_RO"
     },
     {
       key: 3,
       title: "Tiktok",
       Icon: TikTok,
-      link: "/evenimente"
+      link: "https://www.tiktok.com/@osb_timisoara"
     }
   ]
   export const reviewItems = [

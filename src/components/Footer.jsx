@@ -29,7 +29,7 @@ export const Footer = () => {
       {menuIcons.map((item ,Index) => {
                     return(
                        <li key={Index}>
-                        <a href={item.link} key={Index}>
+                        <a href={item.link} target="_blank" key={Index}>
                         <span className="icon">
                           <item.Icon/>
                         </span>

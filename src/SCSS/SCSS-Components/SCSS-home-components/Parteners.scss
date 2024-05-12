@@ -22,4 +22,28 @@
             width: conv(0px, 375px,"xs");
         }
     }
+    .parteners-section-logos{
+        display: flex;
+        gap: conv(10px, 20px, "xl");
+        @include md{
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: auto;
+            height: 120px;
+            box-sizing: content-box;
+            padding: 20px;
+            @include md{
+                padding: 0;
+                height: conv(60px, 100px, "md");
+            }
+            @include sm{
+                padding: 0;
+                height: conv(60px, 100px, "sm");
+            }
+        }
+    }
 }
