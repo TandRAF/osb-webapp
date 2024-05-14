@@ -19,16 +19,12 @@ export const Reviews = () => {
 
     function handleTouchEnd() {
         if (touchStart - touchEnd > 70) {
-            console.log(touchStart);
-            console.log(touchStart - touchEnd);
             if(cardIndex < 5){
                 setCardIndex(()=>cardIndex+1);
             }
         console.log("right");
         }
-        else if (touchStart - touchEnd < 70) {
-            console.log(touchStart);
-            console.log(touchStart - touchEnd);
+        if (touchStart - touchEnd < 150) {
             if(cardIndex > 0){
                 setCardIndex(()=>cardIndex-1);
             }

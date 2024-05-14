@@ -1,6 +1,5 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState,} from "react";
 import { Crown } from "../../assets/Icons/Icons";
-import { useInView } from "react-spring";
 import "../../SCSS/SCSS-Components/SCSS-home-components/Statistic.scss";
 function Counter({ targetNumber }) {
     const [count, setCount] = useState(0);

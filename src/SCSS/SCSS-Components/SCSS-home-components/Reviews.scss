@@ -62,7 +62,7 @@
     background-color: $block-color-light;
     filter:drop-shadow(6px 10px 60px rgba(0.516,0.434,0,0.10));
     p{
-        @include font(conv(16px,18px,"xl"), "Regular", 150%)
+        @include font(conv(18px,20px,"xl"), "Regular", 150%)
     }
     @include lg{
         width: fit-content;
@@ -74,13 +74,13 @@
         }
     }
     &:nth-child(4){
-        margin-top: -100px;
+        margin-top: -160px;
         @include lg{
             margin: 0px;
         }
     }
     &:nth-child(5){
-        margin-top: -140px;
+        margin-top: -200px;
         @include lg{
             margin: 0px;
         }
