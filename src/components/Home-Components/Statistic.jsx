@@ -17,7 +17,6 @@ function Counter({ targetNumber }) {
     }, [count, targetNumber]);
 
     let countNumber = Math.ceil(Math.log10(count + 1));
-    console.log( count," nr1 " + Math.floor(count/Math.pow(10,countNumber-1))," nr2 " + count%Math.pow(10,countNumber-1));
     return <span><span>{Math.floor(count/Math.pow(10,countNumber-1))}</span>{count%Math.pow(10,countNumber-1)}</span>;
 }
 export const Statistic = () => {

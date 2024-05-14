@@ -3,7 +3,6 @@ import { Stars,Quotes } from "../../assets/Icons/Icons"
 import { reviewItems } from "../../assets/content"
 import { useState,useEffect,useRef } from "react"
 
-
 export const Reviews = () => {
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
@@ -19,14 +18,17 @@ export const Reviews = () => {
     }
 
     function handleTouchEnd() {
-        if (touchStart - touchEnd > 50) {
+        if (touchStart - touchEnd > 70) {
+            console.log(touchStart);
+            console.log(touchStart - touchEnd);
             if(cardIndex < 5){
                 setCardIndex(()=>cardIndex+1);
             }
         console.log("right");
         }
-
-        if (touchStart - touchEnd < 50) {
+        else if (touchStart - touchEnd < 70) {
+            console.log(touchStart);
+            console.log(touchStart - touchEnd);
             if(cardIndex > 0){
                 setCardIndex(()=>cardIndex-1);
             }

@@ -130,7 +130,7 @@
                         filter:drop-shadow(6px 10px 60px rgba(0.516,0.434,0,0.10));
                         padding: 25px 20px;
                         border-radius: 30px 30px 0 30px;
-                        @include font(20px,"Regular", 150%);
+                        @include font(18px,"Regular", 150%);
                         margin-bottom: 20px;
                         overflow: hidden;
                         text-align: left;
@@ -179,9 +179,8 @@
     }
 }
 .q-icon{
-    width: 78px;
-    height: 78px;
-
+    width: 50px;
+    height: 50px;
     background-size: cover;
     display: inline-block;
     white-space: nowrap;
@@ -199,14 +198,16 @@
     }
 }
 .a-icon{
-    width: 78px;
-    height: 78px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
     display: inline-block;
     white-space: nowrap;
     svg{
+        width: 50px;
+        height: auto;
         position: absolute;
-        margin: -60px 0 0 10px;
+        margin: -60px 0 0 0;
     }
     @include md{
         width: conv(40px,60px,"md");
