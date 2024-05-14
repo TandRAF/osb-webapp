@@ -5,7 +5,7 @@ import { Layout } from './Layout';
 
 function App() {
   return (
-    <Routes>
+    <Routes basename='/osb-webapp'>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         {/* <Route path="despre-noi" element={<AboutUs />} />
