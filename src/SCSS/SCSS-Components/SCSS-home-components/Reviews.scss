@@ -5,6 +5,8 @@
     display: grid;
     justify-content: space-around;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+    justify-content: flex-end;
     gap: conv(10px, 30px,"xl") conv(10px, 20px,"xl");
     @include lg{
         margin: 40px 0px;
@@ -54,47 +56,72 @@
     display: flex;
     flex-direction: column;
     width: conv(200px,300px,"xl");
-    height: fit-content;
+    height: max-content;
     padding: conv(20px, 40px, "xl");
     border-radius: 5px;
     box-sizing: content-box;
     gap: 20px;
+    text-indent: 20px;
     background-color: $block-color-light;
+    @include sm{
+        height: auto;
+        justify-content: space-between;
+    }
     filter:drop-shadow(6px 10px 60px rgba(0.516,0.434,0,0.10));
     p{
-        @include font(conv(18px,20px,"xl"), "Regular", 150%)
+        @include font(conv(16px,18px,"xl"), "Regular", 150%);
+        align-items: baseline;
+        @include sm{
+            text-align: center;
+        }
     }
     @include lg{
         width: fit-content;
     }
     &:nth-child(even){
-        margin-top: -40px;
+        position: relative;
+        top: -80px;
         @include lg{
-            margin: 0px;
+            top: 0px;
         }
     }
-    &:nth-child(4){
-        margin-top: -160px;
+    &:nth-child(3){
+        align-self:end;
         @include lg{
-            margin: 0px;
+            align-self: start;
         }
     }
-    &:nth-child(5){
-        margin-top: -200px;
-        @include lg{
-            margin: 0px;
-        }
-    }
+    // &:nth-child(4){
+    //     margin-top: -160px;
+    //     @include lg{
+    //         margin: 0px;
+    //     }
+    // }
+    // &:nth-child(5){
+    //     margin-top: -200px;
+    //     @include lg{
+    //         margin: 0px;
+    //     }
+    // }
+    // &:nth-child(6){
+    //     margin-top: -40px;
+    //     @include lg{
+    //         margin: 0px;
+    //     }
+    // }
     @include sm{
-        width: 60vw;
+        width: 70vw;
     }
     .card-name-status{
         display: flex;
         flex-direction: row;
         gap: 10px;
+        align-items: center;
+        align-content: center;
         .card-img{
-            width: 45px;
-            height: 45px;
+            width: conv(45px, 60px, "lg");
+            height: conv(45px, 60px, "lg");
+            border-radius: 50%;
             background-size: cover;
         }
         .name-status{
@@ -103,9 +130,11 @@
             gap: 5px;
             span:nth-child(1){
                 @include font(18px, "Bold", 110%);
+                text-indent: 0px;
             }
             span:nth-child(2){
                 @include font(16px, "Regular", 110%);
+                text-indent: 0px;
             }
         }
     }

@@ -45,46 +45,46 @@ export const menuItem = [
   export const reviewItems = [
     {
       text: 
-      " Organizația Non-Profit a Basarabenilor din Timișoara este o prezență  indispensabilă pentru membrii săi și pentru comunitatea în ansamblu,  reprezentând un exemplu de solidaritate și angajament în sprijinirea  diasporii basarabene.",
-      name: "Asmadeus Haidescu",
-      status: "fost Voluntar",
+      " Organizația studenților Basarabeni din Timișoara este locul care a devenit “acasă” chiar și la 1000 de km distanță. Iar evenimentele culturale și educaționale au adăugat o notă specială experienței de student și au contribuit la formarea mea ca și adult în acest oraș minunat.",
+      name: "Barbaneagra Liviu",
+      status: "Voluntar",
+      img: "LB.jpg"
+    },
+    {
+      text: 
+      " Nu m-aș fi gândit vreodată că voi găsi la Timișoara un loc unde să îmi găsesc familia și să mă simt „acasă”. OSB Timișoara adună împreună cei mai frumoși, mai iubitori, creativi și amuzanți omuleți. Alături de iei simt că prind aripi și orice e posibil.",
+      name: "Sava Ana Maria",
+      status: "Fost Președinte",
+      img: "AMS.jpg"
+    },
+    {
+      text: 
+      " OSB Timișoara este cu și despre oameni, așa cum îmi place mie să zic. Fiecare membru al organizației aduce cu el sau ea nu doar o dorință de a se implica în voluntariat, ci și o pasiune pentru schimbare și zâmbete molipsitoare! Împreună, această echipă minunată nu doar că organizează evenimente și proiecte faine, ci creează momente care rămân adânc întipărite în suflet!",
+      name: "Balanici Anastasia",
+      status: "Fost președinte",
       img: "photo.png"
     },
     {
       text: 
-      " Organizația Non-Profit a Basarabenilor din Timișoara este o prezență  indispensabilă pentru membrii săi și pentru comunitatea în ansamblu,  reprezentând un exemplu de solidaritate și angajament în sprijinirea  diasporii basarabene.",
-      name: "Asmadeus Haidescu",
-      status: "fost Voluntar",
-      img: "photo.png"
+      " Organizația Studenților Basarabeni din Timișoara mi-a oferit un spațiu sigur în care m-am descoperit, mi-am îmbunătățit abilitățile de comunicare, organizare și calitatea de lider. Voluntarii OSB primesc cu brațele deschise pe toți cei dornici de a face o schimbare în lume și oferă suport și resurse pentru dezvoltarea și integrarea studenților români de pretutindeni în comunitatea timișoreană.",
+      name: "Mocanu Veronica",
+      status: "Fost Vice-Preșdinte FR",
+      img: "MV.jpg"
     },
     {
       text: 
-      " Organizația Non-Profit a Basarabenilor din Timișoara este o prezență  indispensabilă pentru membrii săi și pentru comunitatea în ansamblu,  reprezentând un exemplu de solidaritate și angajament în sprijinirea  diasporii basarabene.",
-      name: "Asmadeus Haidescu",
-      status: "fost Voluntar",
-      img: "photo.png"
+      "OSB Timișoara este pentru mine mai mult decât un grup de voluntari, OSB pentru mine reprezintă locul unde mă simt sigură și apreciată, locul unde am legat prietenii și locul unde am evoluat, atât din puct de vedere personal, cât și din punct de vedere profesional. OSB Timișoara sunt oamenii cu care dorul de casă nu se simte atât de acut.",
+      name: "Cebotari Evelina",
+      status: "Fost Vice-Preșdinte Edu",
+      img: "CE.jpg"
     },
     {
       text: 
-      " Organizația Non-Profit a Basarabenilor din Timișoara este o prezență  indispensabilă pentru membrii săi și pentru comunitatea în ansamblu,  reprezentând un exemplu de solidaritate și angajament în sprijinirea  diasporii basarabene.",
-      name: "Asmadeus Haidescu",
-      status: "fost Voluntar",
-      img: "photo.png"
+      "Organizația Studenților Basarabeni din Timișoara este despre evenimente grozave, prietenii durabile, multă distracție și momente de neuitat! Locul perfect în care te poți simți mult mai aproape de casă și familie!",
+      name: "Voluța Daniil",
+      status: "Voluntar",
+      img: "DV.jpg"
     },
-    {
-      text: 
-      " Organizația Non-Profit a Basarabenilor din Timișoara este o prezență  indispensabilă pentru membrii săi și pentru comunitatea în ansamblu,  reprezentând un exemplu de solidaritate și angajament în sprijinirea  diasporii basarabene.",
-      name: "Asmadeus Haidescu",
-      status: "fost Voluntar",
-      img: "photo.png"
-    },
-    {
-      text: 
-      " Organizația Non-Profit a Basarabenilor din Timișoara este o prezență  indispensabilă pentru membrii săi și pentru comunitatea în ansamblu,  reprezentând un exemplu de solidaritate și angajament în sprijinirea  diasporii basarabene.",
-      name: "Asmadeus Haidescu",
-      status: "fost Voluntar",
-      img: "photo.png"
-    }
   ]
   export const questionAnswers = [
     {

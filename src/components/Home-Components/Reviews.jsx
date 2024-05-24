@@ -18,7 +18,7 @@ export const Reviews = () => {
     }
 
     function handleTouchEnd() {
-        if (touchStart - touchEnd > 70) {
+        if (touchStart - touchEnd > 150) {
             if(cardIndex < 5){
                 setCardIndex(()=>cardIndex+1);
             }
@@ -44,7 +44,7 @@ export const Reviews = () => {
                         <Quotes/>
                         <p>{item.text}</p>
                         <div className="card-name-status">
-                            <div style={{ backgroundImage: `url("src/assets/Images/${item.img}")` }} className="card-img">
+                            <div style={{ backgroundImage: `url("src/assets/Images/Reviews-Images/${item.img}")` }} className="card-img">
         
                             </div>
                             <div className="name-status">
