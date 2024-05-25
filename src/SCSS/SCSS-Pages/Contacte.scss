@@ -1,0 +1,63 @@
+@import "../Base.scss";
+.contacte-conatiner{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 160px;
+    justify-content: space-between;
+    .contacte-text{
+        max-width: 530px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .write-message-box{
+        width: 50%;
+        .message-block{
+            .message-block-title{
+                display: flex;
+                background-color: $block-color;
+                p{
+                    @include font(24px, "Regular", 100%);
+                    padding: 10px 20px;
+                    color: $backround-color;
+                }
+            }
+            .message-block-content{
+                display: flex;
+                flex-direction: column;
+                background-color: $block-color-light;
+                .message-block-parameters{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    padding: 10px 20px;
+                    border-bottom: 1px solid $block-color-dark;
+                    p{
+                        @include font(conv(18px, 20px, "xl"), "SemiBold", 100%);
+                        color: $font-color;
+                    }
+                    .circle{
+                        width: 15px;
+                        height: 15px;
+                        background-color: $block-color-light;
+                        border: 1px $block-color-dark solid;
+                        border-radius: 50%;
+                    }
+                }
+                .message-block-text-button{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 20px 36px;
+                    button{
+                        @include button-nr1;
+                    }
+                    .message-block-text{
+
+                    }
+                }
+
+            }
+        }
+    }
+}
