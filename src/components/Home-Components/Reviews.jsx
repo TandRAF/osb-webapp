@@ -44,9 +44,7 @@ export const Reviews = () => {
                         <Quotes/>
                         <p>{item.text}</p>
                         <div className="card-name-status">
-                            <div style={{ backgroundImage: `url("src/assets/Images/Reviews-Images/${item.img}")` }} className="card-img">
-        
-                            </div>
+                            <img key={index} src={item.src} alt="" />
                             <div className="name-status">
                                 <span>{item.name}</span>
                                 <span>{item.status}</span>
