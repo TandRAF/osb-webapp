@@ -11,25 +11,24 @@ export const Reviews = () => {
     const card = useRef({});
     function handleTouchStart(e) {
         setTouchStart(e.targetTouches[0].clientX);
+        console.log(e.targetTouches[0].clientX);
     }
 
-    function handleTouchMove(e) {
+    function handleTouchEnd(e) {
         setTouchEnd(e.targetTouches[0].clientX);
+        console.log(e.targetTouches[0].clientX);
     }
 
-    function handleTouchEnd() {
+    function handleTouchMove() {
         if (touchStart - touchEnd > 150) {
             if(cardIndex < 5){
                 setCardIndex(()=>cardIndex+1);
             }
-        console.log("right");
         }
         if (touchStart - touchEnd < 150) {
             if(cardIndex > 0){
                 setCardIndex(()=>cardIndex-1);
             }
-        // do your stuff here for right swipe
-        console.log("left");
         }
     }
     const [width, setWidth] = useState(window.innerWidth);
@@ -44,9 +43,7 @@ export const Reviews = () => {
                         <Quotes/>
                         <p>{item.text}</p>
                         <div className="card-name-status">
-                            <div style={{ backgroundImage: `url("src/assets/Images/Reviews-Images/${item.img}")` }} className="card-img">
-        
-                            </div>
+                            <img key={index} src={item.src} alt={item.name} />
                             <div className="name-status">
                                 <span>{item.name}</span>
                                 <span>{item.status}</span>

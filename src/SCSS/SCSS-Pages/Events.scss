@@ -1,0 +1,45 @@
+@import "../Base.scss";
+
+.events-container{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .events-main-text{
+        background-color: $block-color-dark;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: conv(40px,80px,"xl") conv(50px,100px,"xl");
+        @include lg{
+            padding: conv(40px, 80px,"lg") conv(20px, 50px,"lg");
+        }
+        @include sm{
+            padding: 40px conv(20px, 50px,"sm");
+        } 
+        @include xs{
+            padding: 40px conv(0px, 20px,"xs");
+        }
+        .text-block{
+            display: flex;
+            width: 50%;
+            @include local-gap;
+            flex-direction: column;
+            @include lg{
+                width: 60%;
+            }
+            @include md{
+                width: 70%;
+            }
+            @include sm{
+                width: 100%;
+            }
+            h2{
+                color: $backround-color;
+            }
+            p{
+                color: $backround-color;
+            }
+        }
+    }
+}

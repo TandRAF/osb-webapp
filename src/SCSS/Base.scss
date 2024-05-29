@@ -20,9 +20,6 @@ h1{
     padding: 0px;
     margin: 0px;
     @include font(conv(32px,40px,"xl"),"SemiBold",110%);
-    @include lg{
-        @include font(conv(24px,32px,"lg"),"SemiBold",110%);
-    }
     @include sm{
         @include font(conv(32px,40px,"sm"),"SemiBold",110%);
     }

@@ -1,7 +1,7 @@
 import "../SCSS/SCSS-Components/Footer.scss"
 import { menuItem, menuIcons } from "../assets/content"
 import { Link } from "react-router-dom"
-import { Facebook,Instagram,TikTok,MailIcon} from "../assets/Icons/MediaIcons"
+import {MailIcon} from "../assets/Icons/MediaIcons"
 export const Footer = () => {
   return (
    <footer>
