@@ -1,17 +1,50 @@
 @import "../Base.scss";
 .contacte-conatiner{
     display: flex;
-    flex-direction: row;
-    margin-bottom: 160px;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0;
+    gap: 40px;
+    .contacte-header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        @include lg{
+            flex-direction: column;
+            justify-content: center;
+            width: fit-content;
+            align-self: center;
+            align-items: center;
+            gap: 40px;
+        }
+        
+    }
     .contacte-text{
         max-width: 530px;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @include lg{
+            width: 684px;
+            justify-content: center;
+            align-items: center;
+            p,h1{
+                text-align: center;
+            }
+        }
+        @include sm{
+            width: 100%;
+        }
     }
     .write-message-box{
-        width: 50%;
+        width: conv(761px, 834px, "xl");
+        @include lg{
+            width: conv(500px, 750px, "lg");
+        }
+        @include sm{
+            width: 100%;
+        }
         .message-block{
             .message-block-title{
                 display: flex;
@@ -53,11 +86,45 @@
                         @include button-nr1;
                     }
                     .message-block-text{
-
+                        //to be filled
                     }
                 }
 
             }
         }
     }
+    .contacte-icon-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 40px 0;
+        width: 100%;
+        gap: 40px;
+        background-color: $block-color-dark;
+
+        @include sm{
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .contacte-icon-info-block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            p{
+                text-align: center;
+                padding: 0;}
+            p:nth-child(2){
+                @include font(24px, "Bold", 100%);
+                color: $backround-color;
+            }
+            p:nth-child(3){
+                @include font(20px, "Regular", 100%);
+                color: $backround-color;
+            }
+        }
+    }
+
 }

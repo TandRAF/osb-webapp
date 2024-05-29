@@ -1,4 +1,5 @@
 import { Facebook, Instagram, TikTok } from "./Icons/MediaIcons"
+import { PhoneNumber, Mail, Location } from "../assets/Icons/ContacteIcons"
 
 export const menuItem = [
     {
@@ -112,4 +113,24 @@ export const menuItem = [
       question:"Cum pot raporta o problemă sau oferi feedback ?",
       answer: "vă rugăm să completați  formularul"
     },
+  ]
+  export const contacteInfo = [
+    {
+      key: 1,
+      icon: PhoneNumber,
+      title: "Număr de telefon",
+      info: "06486367362"
+    },
+    {
+      key: 2,
+      icon: Mail,
+      title: "Mail",
+      info: "osb_timisoara.gmail.ro"
+    },
+    {
+      key: 3,
+      icon: Location,
+      title: "Locația",
+      info: "osb_timisoara.gmail.ro"
+    }
   ]

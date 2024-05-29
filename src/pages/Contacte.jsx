@@ -1,11 +1,13 @@
 import "../SCSS/SCSS-Pages/Contacte.scss";
 import { Crown } from "../assets/Icons/Icons"
+import { contacteInfo } from "../assets/content";
 
 export const Contacte = () => {
 
   return (
     <>
     <div className="contacte-conatiner">
+      <div className="contacte-header">
       <section className="contacte-text">
           <Crown/>
         <div className="contacte-text-h1-svg">
@@ -49,6 +51,18 @@ export const Contacte = () => {
             </div>
           </div>
         </div>
+      </section>
+      </div>
+      <section className="contacte-icon-info">
+        {contacteInfo.map((item) => {
+          return (
+            <div key={item.key} className="contacte-icon-info-block">
+                <item.icon/>
+                <p>{item.title}</p>
+                <p>{item.info}</p>
+            </div>
+          )
+        })}
       </section>
     </div>
     </>
