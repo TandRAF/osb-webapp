@@ -141,28 +141,36 @@ export const menuItem = [
       img : LunaSportiva
     },
     {
+      index: 3,
       title : "Cupa de Volei",
       date : 10,
-      time: "00:00",
-      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
-      img : LunaSportiva
-    },
-    {
-      index: 3,
       time: "00:00",
       month : "Aprilie",
       description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
       img : LunaSportiva
     },
     {
+      index: 3,
       title : "Cupa de Volei",
       date : 10,
       time: "00:00",
       month : "Aprilie",
       description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
+      img : LunaSportiva
     },
     {
       index: 3,
+      title : "Cupa de Volei",
+      date : 10,
+      time: "00:00",
+      month : "Aprilie",
+      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
+      img : LunaSportiva
+    },
+    {
+      index: 3,
+      title : "Cupa de Volei",
+      date : 10,
       time: "00:00",
       month : "Aprilie",
       description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
