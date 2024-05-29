@@ -1,0 +1,83 @@
+@import "../Base.scss";
+.events-title-block{
+    display: flex;
+    flex-direction: column;
+    order: revert;
+    gap: 20px;
+    .month-title{
+        @include font(20px, "Light", 100%);
+    }
+    .events-bloks{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 10px;
+        order: revert;
+        @include sm{
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+        @include xs{
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+        .event{
+            border-radius: 5px;
+            display: flex;
+            padding: 25px;
+            flex-direction: column;
+            gap: 20px;
+            background-color: $backround-color;
+            filter: $block-shadow;
+            .event-date-clock{
+                display: flex;
+                justify-content: space-between;
+                .event-date{
+                    padding: 10px;
+                    border: solid $block-color-dark 2px;
+                    display: flex;
+                    flex-direction: column;
+                    span:nth-child(1){
+                        display: flex;
+                        justify-content: center;
+                        @include font(40px, "Light", 100%);
+                        @include md{
+                            @include font(conv(25px, 40px,"md"), "Light", 100%);
+                        }
+                    }
+                    span:nth-child(2){
+                        display: flex;
+                        justify-content: center;
+                        @include font(20px, "Light", 100%);
+                        @include md{
+                            @include font(conv(15px, 20px,"md"), "Light", 100%);
+                        }
+                    }
+                }
+                .event-clock{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        @include font(20px, "Light", 100%);
+                        @include md{
+                            @include font(conv(15px, 20px, "md"), "Light", 100%)
+                        }
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                height: 150px;
+                @include md{
+                    height: conv(100px, 150px,"md");
+                }
+                object-fit: contain;
+            }
+            .event-title{
+                @include font(20px, "Bold", 110%);
+            }
+            .event-description-button{
+                @include font(15px, "Regular", 110%);
+            }
+        }
+    }
+}

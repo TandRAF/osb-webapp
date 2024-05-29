@@ -4,6 +4,8 @@ import DanImg from "../assets/Images/Reviews-Images/DanImg.jpg"
 import EvelinaImg from "../assets/Images/Reviews-Images/EvelinaImg.jpg"
 import LiviuImg from "../assets/Images/Reviews-Images/DanImg.jpg"
 import VeronicaImg from "../assets/Images/Reviews-Images/VeronicaImg.jpg"
+import LunaSportiva from "../assets/Images/LunaSportiva.png"
+
 export const menuItem = [
     {
       key: 1,
@@ -53,7 +55,6 @@ export const menuItem = [
       name: "Barbaneagra Liviu",
       status: "Voluntar",
       src: LiviuImg,
-      alt : "Barbaneagra Liviu"
     },
     {
       text: 
@@ -117,4 +118,79 @@ export const menuItem = [
       question:"Cum pot raporta o problemă sau oferi feedback ?",
       answer: "vă rugăm să completați  formularul"
     },
+  ]
+  export const Months = ["Septembrie", "Octombrie", "Noiembrie", "Decembrie", "Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August"];
+  export const EventsCards = [
+    {
+      index: 1,
+      title : "Cupa de Volei",
+      date : 1,
+      time: "00:00",
+      month : "Aprilie",
+      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
+      img : LunaSportiva
+    },
+    {
+      index: 2,
+      title : "Cupa de Volei",
+      date : 13,
+      time: "00:00",
+      month : "Aprilie",
+      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
+      img : LunaSportiva
+    },
+    {
+      index: 3,
+      title : "Cupa de Volei",
+      date : 10,
+      time: "00:00",
+      month : "Aprilie",
+      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
+      img : LunaSportiva
+    },
+    {
+      index: 3,
+      title : "Cupa de Volei",
+      date : 10,
+      time: "00:00",
+      month : "Aprilie",
+      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
+      img : LunaSportiva
+    },
+    {
+      index: 3,
+      title : "Cupa de Volei",
+      date : 10,
+      time: "00:00",
+      month : "Aprilie",
+      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
+      img : LunaSportiva
+    },
+    {
+      index: 3,
+      title : "Cupa de Volei",
+      date : 10,
+      time: "00:00",
+      month : "Aprilie",
+      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
+      img : LunaSportiva
+    },
+    {
+      index: 3,
+      title : "Cupa de Volei",
+      date : 10,
+      time: "00:00",
+      month : "Aprilie",
+      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
+      img : LunaSportiva
+    },
+    {
+      index: 4,
+      title : "Cupa de Volei",
+      date : 22,
+      time: "00:00",
+      month : "Mai",
+      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
+      img : LunaSportiva
+    }
   ]
