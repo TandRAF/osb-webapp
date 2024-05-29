@@ -205,3 +205,5 @@ export const menuItem = [
       icon: Location,
       title: "Locația",
       info: "osb_timisoara.gmail.ro"
+    }
+  ]

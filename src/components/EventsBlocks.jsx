@@ -1,4 +1,3 @@
-import { a } from "react-spring";
 import "../SCSS/SCSS-Components/EventsBlocks.scss"
 import { EventsCards, Months } from "../assets/content"
 import { Clock } from "../assets/Icons/Icons";
@@ -16,7 +15,7 @@ export const EventsBlocks = () => {
         return exist;
     }
 
-    const SortEventsCard = EventsCards.sort(a, b => a.month - b.month ); 
+    const SortEventsCard = EventsCards.sort((a,b) => a.month - b.month ); 
   return (
     <>
         {Months.reverse().map((month, index)=>{
