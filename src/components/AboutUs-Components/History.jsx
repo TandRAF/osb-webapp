@@ -19,13 +19,16 @@ export const History = () => {
                         <div className="date-detalies">
                             {item.event}
                         </div>
+                        <img className={item.img == "none"? "none": ""}
+                        src={item.img} alt="" />
                     </div>
                     <div className="line-circle-block">
                             <div className="top-line"></div>
                             <div className="circle"></div>
                             <div className="bottom-line"></div>
                     </div>
-                    <div className="void"></div>
+                    <div className="void">
+                    </div>
                 </div>
                 )
             })}

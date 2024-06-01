@@ -16,11 +16,11 @@
     .history-blocks{
         .history-event-block{
             display: grid;
-            grid-template-columns: 510px 13px 510px ;
+            grid-template-columns: 650px 13px 650px ;
             grid-template-areas: 'block line void';
             gap: 10px;
             @include lg{
-                grid-template-columns: conv(340px, 510px, "lg") 13px conv(340px, 510px, "lg") ;
+                grid-template-columns: conv(340px, 600px, "lg") 13px conv(340px, 600px, "lg") ;
             }
             @include sm{
                 grid-template-columns: 13px 60vw ;
@@ -66,8 +66,22 @@
                     filter: $block-shadow;
                     @include font(20px, "Regular", 150%);
                         @include md{
-                            @include font(conv(16px, 20px, "md"), "Regular", 150%);
+                            @include font(conv(18px, 20px, "md"), "Regular", 150%);
                         }
+                        @include sm{
+                            @include font(conv(16px, 18px, "sm"), "Regular", 150%);
+                        }
+                }
+                img{
+                    display: none;
+                    width: 50%;
+                    border-radius: 5px;
+                    height: 150px;
+                    object-fit: cover;
+                    &.none{
+                        opacity: 0;
+                        height: 0px;
+                    }
                 }
             }
             .line-circle-block{
@@ -89,7 +103,7 @@
                     position: relative;
                     height: auto;
                     width: 13px;
-                    height: 16px;
+                    height: 15px;
                     position: relative;
                     border: solid $block-color-dark 2px;
                     border-radius: 50%;
@@ -102,6 +116,7 @@
             }
             .void{
                 grid-area: void;
+                margin:40px 20px;
                 @include sm{
                     display: none;
                 }

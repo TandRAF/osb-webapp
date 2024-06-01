@@ -7,12 +7,20 @@ import VeronicaImg from "../assets/Images/Reviews-Images/VeronicaImg.jpg"
 import LunaSportiva from "../assets/Images/LunaSportiva.png"
 import Wanessa from "../assets/Images/Reviews-Images/Wanessa.png"
 import Anastasia from "../assets/Images/Reviews-Images/Anastasia.png"
-import AnaMariaTopala from "../assets/Images/Reviews-Images/AnaMariaTopala.png"
+import AnaMariaTopala from "../assets/Images/Reviews-Images/AnaMariaTopala.jpg"
 import Adelina from "../assets/Images/Reviews-Images/Adelina.jpg"
 import Cristina from "../assets/Images/Reviews-Images/Cristina.png"
 import { PhoneNumber, Mail, Location } from "../assets/Icons/ContacteIcons"
 import Delia from "../assets/Images/Reviews-Images/Delia.jpg"
 import Balanici from "../assets/Images/Reviews-Images/Balanici.jpg"
+import ImgFZB from "../assets/Images/History-Images/ImgFZB.jpg"
+import Img2001 from "../assets/Images/History-Images/Img2001.jpg"
+import Img2009 from "../assets/Images/History-Images/Img2009.jpg"
+import LogoFZB from "../assets/Images/Events-Logos/LogoFZB.png"
+import LogoLS from "../assets/Images/Events-Logos/LogoLS.png"
+import LogoCM from "../assets/Images/Events-Logos/LogoCM.png"
+import LogoTB from "../assets/Images/Events-Logos/LogoTB.png"
+import LogoGala from "../assets/Images/Events-Logos/LogoGala.png"
 
 export const menuItem = [
     {
@@ -104,7 +112,7 @@ export const menuItem = [
     {
       key: 1,
       question:"Cum pot deveni membru al organizației? ",
-      answer: "Pentru a deveni membru al organizației noastre, vă rugăm să completați  formularul de înscriere disponibil pe site-ul nostru sau să ne  contactați pentru mai multe informații."
+      answer: "Există două modalități prin care poți deveni membru în cadrul Organizației Studenților Basarabeni din Timișoara: Prima metodă presupune participarea la Recrutările care sunt organizate de două ori pe an și durează o săptămână. În urma anunțării începerii procesului de recrutare pe rețelele de socializare ale organizației, candidatul completează formularul de înscriere, în urma căruia este chemat la interviu și devine membru al organizației. A doua modalitate constă în completarea unei Cereri de adeziune în cazul în care s-a terminat perioada de recrutări, astfel oferind posibilitatea candidatului de a face parte din organizație în orice moment. Această cerere poate fi accesată în urma contactării Vicepreședintelui Departamentului de Resurse Umane (sau a oricărui membru din Biroul de Conducere)."
     },
     {
       key: 2,
@@ -131,76 +139,50 @@ export const menuItem = [
   export const EventsCards = [
     {
       index: 1,
-      title : "Cupa de Volei",
-      date : 1,
-      time: "00:00",
-      month : "Aprilie",
-      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
-      img : LunaSportiva
+      title : "Gala OSB",
+      date : 18,
+      time: "16:00",
+      month : "Mai",
+      description : "Aniversarea este mai deosebită în familie.",
+      img : LogoGala
     },
     {
       index: 2,
-      title : "Cupa de Volei",
-      date : 13,
-      time: "00:00",
+      title : "Cupa de Fotbal I",
+      date : 5,
+      time: "08.00",
       month : "Aprilie",
-      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
-      img : LunaSportiva
+      description : "Aniversarea este mai deosebită în familie.",
+      img : LogoLS
     },
     {
       index: 3,
-      title : "Cupa de Volei",
-      date : 10,
-      time: "00:00",
+      title : "Cupa de Fotbal II",
+      date : 6,
+      time: "21.00",
       month : "Aprilie",
-      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
-      img : LunaSportiva
-    },
-    {
-      index: 3,
-      title : "Cupa de Volei",
-      date : 10,
-      time: "00:00",
-      month : "Aprilie",
-      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
-      img : LunaSportiva
-    },
-    {
-      index: 3,
-      title : "Cupa de Volei",
-      date : 10,
-      time: "00:00",
-      month : "Aprilie",
-      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
-      img : LunaSportiva
-    },
-    {
-      index: 3,
-      title : "Cupa de Volei",
-      date : 10,
-      time: "00:00",
-      month : "Aprilie",
-      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
-      img : LunaSportiva
-    },
-    {
-      index: 3,
-      title : "Cupa de Volei",
-      date : 10,
-      time: "00:00",
-      month : "Aprilie",
-      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
-      img : LunaSportiva
+      description : "Evenimente spotive ce promovează modul sănătos și activ de viață.",
+      img : LogoLS
     },
     {
       index: 4,
-      title : "Cupa de Volei",
-      date : 22,
-      time: "00:00",
-      month : "Mai",
-      description : "Anunțăm că în urma tragerii la sorți, s-au stabilit ",
-      img : LunaSportiva
-    }
+      title : "Cupa de Volei I",
+      date : 13,
+      time: "08.00",
+      month : "Aprilie",
+      description : "Aniversarea este mai deosebită în familie.",
+      img : LogoLS
+    },
+    {
+      index: 5,
+      title : "Cupa de Volei II",
+      date : 14,
+      time: "21.00",
+      month : "Aprilie",
+      description : "Evenimente spotive ce promovează modul sănătos și activ de viață.",
+      img : LogoLS
+    },
+
   ]
   export const contacteInfo = [
     {
@@ -270,20 +252,24 @@ export const menuItem = [
     {
       date:"27 martie",
       year: 2001,
+      img: Img2001,
       event: "S-a marcat 83 de ani de la Unirea Basarabiei cu Romania, în acest sens, în premieră la Timișoara a avut loc Festivalul Cultural „Zilele Basarabiei” ediția I, eveniment care până în prezent este celebrat anual, la finalul lunii martie și reprezintă o oportunitate unică de a celebra diversitatea și frumusețea culturii din Republica Moldova, de a ne aduce aminte de tradițiile și valorile care ne definesc ca popor."
     },
     {
       date:"3 Mai",
       year: 2001,
+      img: "none",
       event: " în această zi pentru a fost înființată legal organizația, care astăzi poartă denumirea de Organizația Studenților Basarabeni din Timișoara (OSB Tm), însă pentru prima dată organizația a apărut sub numele Asociația Studenților Basarabeni Creștini din Timișoara (ASBCT);"
     },
     {
       date:"",
       year: 2006,
+      img: ImgFZB,
       event: " acest an s-a marcat prin schimbarea denumirii organizației, anul în care a apărut Organizația Studenților Basarabeni din Timișoara, denumire pe care o avem și astăzi."
     },{
       date:"1 martie",
       year: 2009,
+      img: Img2009,
       event: "Organizația Studenților Basarabeni din Timișoara a aderat la Alianța Națională a Organizațiilor Studențești din România, iar în 2011 am devenit membri cu drept de vot în federație"
     }
   ]
