@@ -5,6 +5,7 @@ import Anosr from "../../assets/Images/Companies/LogoANOSR.png"
 import COSPol from "../../assets/Images/Companies/LogoCOSPol.png"
 import FITT from "../../assets/Images/Companies/LogoFITT.png"
 import FTB from "../../assets/Images/Companies/LogoFTB.png"
+import Ilustration from "../../assets/Images/main-img.png"
 
 export const MainInfo = () => {
   return (
@@ -27,8 +28,7 @@ export const MainInfo = () => {
           <Link to="/despre-noi">Mai multe detalii</Link>
         </div>
       </section>
-      <section className="main-img">
-      </section>
+      <img className="main-img" src={Ilustration} alt="" />
       <section className="main-more-info">
         <div className="main-scope-info">
           <Stars/>

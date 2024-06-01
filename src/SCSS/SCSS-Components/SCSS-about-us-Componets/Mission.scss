@@ -1,0 +1,71 @@
+@import "../../Base.scss";
+.mission-container{
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $block-color-dark;
+    @include md{
+        flex-direction: column;
+        gap: 40px;
+        padding: conv(20px, 40px, "md");
+    }
+    @include sm{
+
+    }
+    .mission-text{
+        display: flex;
+        flex-direction: column;
+        @include local-gap;
+        width: conv(400px, 450px, "xl");
+        @include md{
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        h2,p{
+            color: $backround-color;
+            @include md{
+                text-align: center;
+            }
+        }
+    }
+    .mission-blocks{
+        display:grid;
+        width: conv(500px, 700px, "xl");
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        @include md{
+            width: 100%;
+        }
+    }
+    .block{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border-bottom: solid 2px $backround-color;
+        @include sm{
+            padding: 10px
+        }
+        .block-number{
+            span{
+                @include font(64px, "Black", 110%);
+                &:nth-child(1){
+                    color: $backround-color;
+                }
+                &:nth-child(2){
+                    color: $block-color;
+                }
+            }
+        }
+        p{
+            color: $backround-color;
+            @include sm{
+                @include font(14px, 18px, "sm");
+                color: $backround-color;
+            }
+        }
+    }
+}

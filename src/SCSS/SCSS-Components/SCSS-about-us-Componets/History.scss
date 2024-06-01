@@ -1,0 +1,111 @@
+@import "../../Base.scss";
+
+.history-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1,p{
+        width: 720px;
+        text-align: center;
+        @include sm{
+            width: 100%;
+        }
+    }
+    @include local-gap;
+    .history-blocks{
+        .history-event-block{
+            display: grid;
+            grid-template-columns: 510px 13px 510px ;
+            grid-template-areas: 'block line void';
+            gap: 10px;
+            @include lg{
+                grid-template-columns: conv(340px, 510px, "lg") 13px conv(340px, 510px, "lg") ;
+            }
+            @include sm{
+                grid-template-columns: 13px 60vw ;
+                grid-template-areas: 'line block';
+            }
+            @include xs{
+                grid-template-columns: 13px 80vw ;
+            }
+            &:nth-child(odd){
+                grid-template-areas: 'void line block';
+                @include sm{
+                    grid-template-areas: 'line block';
+                }
+            }
+            .date-text-block{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                grid-area: block;
+                .date-block{
+                    display: flex;
+                    gap: 10px;
+                    padding: 20px;
+                    border: solid 2px $block-color-dark;
+                    border-radius: 5px;
+                    width: fit-content;
+                    height: fit-content;
+                    &.left{
+                        align-self: end;
+                        @include sm{
+                            align-self: start;
+                        }
+                    }
+                    span{
+                        @include font(20px, "Regular", 110%)
+                    }
+
+                }
+                .date-detalies{
+                    padding: 20px;
+                    background-color: $block-color-light;
+                    filter: $block-shadow;
+                    @include font(20px, "Regular", 150%);
+                        @include md{
+                            @include font(conv(16px, 20px, "md"), "Regular", 150%);
+                        }
+                }
+            }
+            .line-circle-block{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                grid-area: line;
+                .top-line,.bottom-line{
+                    width: 2px;
+                    background-color: $block-color-dark;
+                }
+                .top-line{
+                    position: relative;
+                    height: 50px;
+                }
+                .circle{
+                    position: relative;
+                    height: auto;
+                    width: 13px;
+                    height: 16px;
+                    position: relative;
+                    border: solid $block-color-dark 2px;
+                    border-radius: 50%;
+                }
+                .bottom-line{
+                    position: relative;
+                    height: 100%;
+                    align-items: stretch;
+                }
+            }
+            .void{
+                grid-area: void;
+                @include sm{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import "../../Base.scss";
+
+.bc-members-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    .bc-members-blocks{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        align-items: stretch;
+        width: 90%;
+        @include md{
+            width: 100%;
+        }
+        .member-block{
+            display: flex;
+            width: conv(200px,250px, "xl");
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            @include sm{
+                flex: 1 1 calc(50% - 10px);
+            }
+            img{
+                width: conv(150px, 200px, "xl");
+                height:conv(150px, 200px, "xl");
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            span{
+                text-align: center;
+                @include font(conv(20px,24px, "xl"), "Regular", 110%);
+                @include xs{
+                    @include font(conv(18px,20px, "xs"), "Regular", 110%);
+                }
+            }
+        }
+    }
+}

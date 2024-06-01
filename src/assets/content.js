@@ -5,7 +5,13 @@ import EvelinaImg from "../assets/Images/Reviews-Images/EvelinaImg.jpg"
 import LiviuImg from "../assets/Images/Reviews-Images/DanImg.jpg"
 import VeronicaImg from "../assets/Images/Reviews-Images/VeronicaImg.jpg"
 import LunaSportiva from "../assets/Images/LunaSportiva.png"
+import Wanessa from "../assets/Images/Reviews-Images/Wanessa.png"
+import Anastasia from "../assets/Images/Reviews-Images/Anastasia.png"
+import AnaMariaTopala from "../assets/Images/Reviews-Images/AnaMariaTopala.png"
+import Adelina from "../assets/Images/Reviews-Images/Adelina.jpg"
+import Cristina from "../assets/Images/Reviews-Images/Cristina.png"
 import { PhoneNumber, Mail, Location } from "../assets/Icons/ContacteIcons"
+import Delia from "../assets/Images/Reviews-Images/Delia.jpg"
 
 export const menuItem = [
     {
@@ -213,5 +219,71 @@ export const menuItem = [
       icon: Location,
       title: "Locația",
       info: "osb_timisoara.gmail.ro"
+    }
+  ]
+
+  export const BcMembers = [
+    {
+      name:"Sava Ana Maria",
+      status: "Președinte",
+      img: AnaMariaImg
+    },
+    {
+      name:"Wanessa Grati",
+      status: "Secretar General",
+      img: Wanessa
+    },
+    {
+      name:"Cătălina-Delia Vătămănescu",
+      status: "Vicepreședinte Fundraising și Proiecte",
+      img: Delia
+    },
+    {
+      name:"Evelina Cebotari",
+      status: "Vicepreședinte Social-Educațional",
+      img: EvelinaImg
+    },
+    {
+      name:"Cristina-Mădălina Mîslițchi",
+      status: "Vicepreședinte Resurse Umane",
+      img: Cristina
+    },
+    {
+      name:"Adelina Tulburi",
+      status: "Vicepreședinte Relații Publice",
+      img: Adelina
+    },
+    {
+      name:"Ana-Maria Topală",
+      status: "Vicepreședinte Imagine-IT",
+      img: AnaMariaTopala
+    },
+    {
+      name:"Anastasia Stolearenco",
+      status: "Cenzor",
+      img: Anastasia
+    },
+  ] 
+
+  export const HistoryEvents = [
+    {
+      date:"3 Mai",
+      year: 1999,
+      event: "OSB Timișoara - Organizația Studenților Basarabeni din Timișoara a luat naștere ca rezultat al implicării și dorinței de a uni studenții basarabeni din Timișoara într-o comunitate solidă."
+    },
+    {
+      date:"3 Mai",
+      year: 1999,
+      event: "OSB Timișoara - Organizația Studenților Basarabeni din Timișoara a luat naștere ca rezultat al implicării și dorinței de a uni studenții basarabeni din Timișoara într-o comunitate solidă."
+    },
+    {
+      date:"3 Mai",
+      year: 1999,
+      event: "OSB Timișoara - Organizația Studenților Basarabeni din Timișoara a luat naștere ca rezultat al implicării și dorinței de a uni studenții basarabeni din Timișoara într-o comunitate solidă."
+    },
+    {
+      date:"3 Mai",
+      year: 1999,
+      event: "OSB Timișoara - Organizația Studenților Basarabeni din Timișoara a luat naștere ca rezultat al implicării și dorinței de a uni studenții basarabeni din Timișoara într-o comunitate solidă."
     }
   ]

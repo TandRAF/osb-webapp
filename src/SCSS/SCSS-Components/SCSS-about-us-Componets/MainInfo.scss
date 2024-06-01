@@ -1,0 +1,24 @@
+@import "../../Base.scss";
+
+.main-title-description > body{
+    background-image: none;
+}
+.main-title-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include local-gap; 
+    height: 75vh;
+    border-radius: 5px;
+    h2,p{
+        width: 750px;
+        text-align: center;
+                @include md{
+                    width: conv(600px,750px, "md");
+                }
+                @include sm{
+                    width: 90%;
+                }
+    }
+}

@@ -1,0 +1,62 @@
+@import "../../Base.scss";
+
+.departaments-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    @include local-gap;
+    h2{
+        text-align:center ;
+    }
+    .departaments-blocks{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+        // @include md{
+        //     display: grid;
+        //     grid-template-columns: 1fr 1fr;
+        //     justify-content: center
+        // }
+            .block{
+                width: conv(350px, 420px, "xl");
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: conv(20px, 40px, "xl");
+                background-color: white;
+                filter: $block-shadow;
+                &.black{
+                    background-color: $block-color-dark;
+                    h3,p{
+                        color: $backround-color;
+                    }
+                }
+                @include md{
+                    flex: 1 1 calc(50% - 10px);
+                }
+                @include sm{
+                    width: 100%;
+                }
+                .block-number{
+                    span{
+                        @include font(64px, "Black", 110%);
+                        &:nth-child(1){
+                            color: $font-color;
+                            &.black{
+                                color: $backround-color;
+                            }
+                        }
+                        &:nth-child(2){
+                            color: $block-color;
+                        }
+                    }
+                }
+            }
+    }
+}
