@@ -18,7 +18,8 @@
     "react-dom": "^18.2.0",
     "react-spring": "^9.7.3",
     "sass": "^1.75.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

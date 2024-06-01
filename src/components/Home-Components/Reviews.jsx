@@ -4,6 +4,7 @@ import { reviewItems } from "../../assets/content"
 import { useState,useEffect,useRef } from "react"
 
 export const Reviews = () => {
+    const [width, setWidth] = useState(window.innerWidth);
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
     const [cardWidth, setCardWidth] = useState(0);
@@ -11,27 +12,26 @@ export const Reviews = () => {
     const card = useRef({});
     function handleTouchStart(e) {
         setTouchStart(e.targetTouches[0].clientX);
-        console.log(e.targetTouches[0].clientX);
     }
 
     function handleTouchEnd(e) {
         setTouchEnd(e.targetTouches[0].clientX);
-        console.log(e.targetTouches[0].clientX);
     }
 
     function handleTouchMove() {
-        if (touchStart - touchEnd > 150) {
+        if (touchStart - touchEnd > width/2) {
             if(cardIndex < 5){
-                setCardIndex(()=>cardIndex+1);
+                console.log(cardWidth,cardIndex);
+                setCardIndex((index)=>index+1);
             }
         }
-        if (touchStart - touchEnd < 150) {
+        if (touchStart - touchEnd < width/2) {
             if(cardIndex > 0){
-                setCardIndex(()=>cardIndex-1);
+                console.log(cardWidth,cardIndex);
+                setCardIndex((index)=>index-1);
             }
         }
     }
-    const [width, setWidth] = useState(window.innerWidth);
     const showCards = (items) => {
         return(
             <>
@@ -71,8 +71,8 @@ export const Reviews = () => {
             {(width > 768) ? <>{showCards(reviewItems)}</>:<> 
             <div
             onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
+            onTouchMove={handleTouchEnd}
+            onTouchEnd={handleTouchMove}
             className="card-box" >
                 <div
                 style={
