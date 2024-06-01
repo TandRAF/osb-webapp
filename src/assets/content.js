@@ -12,6 +12,7 @@ import Adelina from "../assets/Images/Reviews-Images/Adelina.jpg"
 import Cristina from "../assets/Images/Reviews-Images/Cristina.png"
 import { PhoneNumber, Mail, Location } from "../assets/Icons/ContacteIcons"
 import Delia from "../assets/Images/Reviews-Images/Delia.jpg"
+import Balanici from "../assets/Images/Reviews-Images/Balanici.jpg"
 
 export const menuItem = [
     {
@@ -75,7 +76,7 @@ export const menuItem = [
       " OSB Timișoara este cu și despre oameni, așa cum îmi place mie să zic. Fiecare membru al organizației aduce cu el sau ea nu doar o dorință de a se implica în voluntariat, ci și o pasiune pentru schimbare și zâmbete molipsitoare! Împreună, această echipă minunată nu doar că organizează evenimente și proiecte faine, ci creează momente care rămân adânc întipărite în suflet!",
       name: "Balanici Anastasia",
      status: "Fost președinte",
-      src:  "None"
+      src:  Balanici
     },
     {
       text: 
@@ -102,28 +103,28 @@ export const menuItem = [
   export const questionAnswers = [
     {
       key: 1,
-      question:"Cum pot deveni membru al organizație i?",
-      answer: "Pentru a deveni membru al organizației noastre, vă rugăm să completați  formularul de înscriere disponibil pe site-ul nostru sau să ne  contactați pentru mai multe informații. Vom fi bucuroși să vă oferim  detalii suplimentare despre avantajele membrilor și procedurile de  înscriere."
+      question:"Cum pot deveni membru al organizației? ",
+      answer: "Pentru a deveni membru al organizației noastre, vă rugăm să completați  formularul de înscriere disponibil pe site-ul nostru sau să ne  contactați pentru mai multe informații."
     },
     {
       key: 2,
-      question:"Ce proiecte sunt disponibile pentru voluntariat ?",
-      answer: "vă rugăm să completați  formularul"
+      question:"Cum pot face o donație organizației?",
+      answer: "Puteți susține activitatea noastră prin redirecționarea a 3.5% din impozitul pe venit"
     },
     {
       key: 3,
-      question:"Care sunt modalitățile de plată acceptate pentru donații ?",
-      answer: "vă rugăm să completați  formularul"
+      question:"Unde pot găsi mai multe informații despre universități și oferta academică?",
+      answer: "Toate informațiile despre universități și desfășurarea procesului educațional o poți găsi pe site-ul universității la care dorești să aplici sau pe site-urile aferente fiecărei facultăți, însă pentru a faciilita accesul la informație și a simplifica procesul de admitere pentru viitorii studenți, la OSB Timișoara am conceput GHIDUL Studentului Basarabean, unde găsești informații despre universități, facultăți, actele necesare pentru procesul de studii și procesul de cazare. "
     },
     {
       key: 4,
-      question:"Cum pot raporta o problemă sau oferi feedback ?",
-      answer: "vă rugăm să completați  formularul"
+      question:"Există examene de admitere și cum pot să mă pregătesc pentru acestea?",
+      answer: "La Universitatea Politehnica Timișoara, la fel ca și la Universitatea de Medicină și Farmacie ,,Victor Babeș” din Timișoara studenții etnici români nu suțin examene de admitere, însă la Universitatea de Vest examene de admitere nu se susțin decât la Facultatea de Arte și Design, Facultatea de Muzică și Teatru și Facultatea de Facultatea de Educație fizică și Sport. "
     },
     {
       key: 5,
-      question:"Cum pot raporta o problemă sau oferi feedback ?",
-      answer: "vă rugăm să completați  formularul"
+      question:"4.	Cum este comunitatea studențească și ce activități extracurriculare sunt disponibile?",
+      answer: "Timișoara fiind și denumită ,,orașul studenților” este cunoscută ca fiind una dintre cele mai faine comunități studențești din țară, la fel, aici se regăsește una dintre cele mai mari comunități academice basarabene din România. Și evident că la capitolul, activități extracuriculare vom include voluntariatul, Organizația Studenților Basarabeni din Timișoara deja de mai bine de două decenii se ocupă cu reprezentarea studenților români de pretutindeni, împreună am reușit să devenim ,,acasă” chiar dacă suntem atât de departe de țara în care ne-am născut, împreună implementăm proiecte frumoase pentru și despre oameni, precum: CineMoldova: Festivalul de film basarabean, Descoperă Timișoara, 100 de studenți au zis și de sigur le suntem alături studenților pentru ai ajuta în procesul de admitere la Timișoara și de a le facilita adaptarea într-un nou mediu. A fi voluntar la OSB Timișoara înseamnă a-ți colora studenția printr-o experiență nemaipomenită."
     },
   ]
   export const Months = ["Septembrie", "Octombrie", "Noiembrie", "Decembrie", "Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August"];
@@ -267,23 +268,22 @@ export const menuItem = [
 
   export const HistoryEvents = [
     {
-      date:"3 Mai",
-      year: 1999,
-      event: "OSB Timișoara - Organizația Studenților Basarabeni din Timișoara a luat naștere ca rezultat al implicării și dorinței de a uni studenții basarabeni din Timișoara într-o comunitate solidă."
+      date:"27 martie",
+      year: 2001,
+      event: "S-a marcat 83 de ani de la Unirea Basarabiei cu Romania, în acest sens, în premieră la Timișoara a avut loc Festivalul Cultural „Zilele Basarabiei” ediția I, eveniment care până în prezent este celebrat anual, la finalul lunii martie și reprezintă o oportunitate unică de a celebra diversitatea și frumusețea culturii din Republica Moldova, de a ne aduce aminte de tradițiile și valorile care ne definesc ca popor."
     },
     {
       date:"3 Mai",
-      year: 1999,
-      event: "OSB Timișoara - Organizația Studenților Basarabeni din Timișoara a luat naștere ca rezultat al implicării și dorinței de a uni studenții basarabeni din Timișoara într-o comunitate solidă."
+      year: 2001,
+      event: " în această zi pentru a fost înființată legal organizația, care astăzi poartă denumirea de Organizația Studenților Basarabeni din Timișoara (OSB Tm), însă pentru prima dată organizația a apărut sub numele Asociația Studenților Basarabeni Creștini din Timișoara (ASBCT);"
     },
     {
-      date:"3 Mai",
-      year: 1999,
-      event: "OSB Timișoara - Organizația Studenților Basarabeni din Timișoara a luat naștere ca rezultat al implicării și dorinței de a uni studenții basarabeni din Timișoara într-o comunitate solidă."
-    },
-    {
-      date:"3 Mai",
-      year: 1999,
-      event: "OSB Timișoara - Organizația Studenților Basarabeni din Timișoara a luat naștere ca rezultat al implicării și dorinței de a uni studenții basarabeni din Timișoara într-o comunitate solidă."
+      date:"",
+      year: 2006,
+      event: " acest an s-a marcat prin schimbarea denumirii organizației, anul în care a apărut Organizația Studenților Basarabeni din Timișoara, denumire pe care o avem și astăzi."
+    },{
+      date:"1 martie",
+      year: 2009,
+      event: "Organizația Studenților Basarabeni din Timișoara a aderat la Alianța Națională a Organizațiilor Studențești din România, iar în 2011 am devenit membri cu drept de vot în federație"
     }
   ]

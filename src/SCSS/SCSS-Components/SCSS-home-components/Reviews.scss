@@ -91,18 +91,18 @@
             align-self: start;
         }
     }
-    // &:nth-child(4){
-    //     margin-top: -160px;
-    //     @include lg{
-    //         margin: 0px;
-    //     }
-    // }
-    // &:nth-child(5){
-    //     margin-top: -200px;
-    //     @include lg{
-    //         margin: 0px;
-    //     }
-    // }
+    &:nth-child(4){
+        margin-top: -80px;
+        @include lg{
+            margin: 0px;
+        }
+    }
+    &:nth-child(5){
+        margin-top: -120px;
+        @include lg{
+            margin: 0px;
+        }
+    }
     // &:nth-child(6){
     //     margin-top: -40px;
     //     @include lg{
