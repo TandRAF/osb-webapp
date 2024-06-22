@@ -3,35 +3,41 @@ import { Stars,Quotes } from "../../assets/Icons/Icons"
 import { reviewItems } from "../../assets/content"
 import { useState,useEffect,useRef } from "react"
 
+var cardIndex = 0;
 export const Reviews = () => {
     const [width, setWidth] = useState(window.innerWidth);
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(0);
     const [cardWidth, setCardWidth] = useState(0);
-    const [cardIndex, setCardIndex] = useState(0);
+    const [cardMove, setCardMove] = useState(0);
+
     const card = useRef({});
-    function handleTouchStart(e) {
-        setTouchStart(e.targetTouches[0].clientX);
+    const startTouchEvent = (e) =>{
+        [...e.changedTouches].forEach(touch => {
+            setTouchStart(touch.pageX);
+        });
     }
-
-    function handleTouchEnd(e) {
-        setTouchEnd(e.targetTouches[0].clientX);
+    const moveTouchEvent = (e) =>{
+        [...e.changedTouches].forEach(touch => {
+            // console.log(touch.pageX);
+        });
     }
-
-    function handleTouchMove() {
-        if (touchStart - touchEnd > width/2) {
-            if(cardIndex < 5){
-                console.log(cardWidth,cardIndex);
-                setCardIndex((index)=>index+1);
-            }
+    const endtTouchEvent = (e) =>{
+        [...e.changedTouches].forEach(touch => {
+            setTouchEnd(touch.pageX);
+        });
+        console.log("Val");
+        console.log(touchStart - touchEnd)
+        if((touchStart - touchEnd > 0) && (cardIndex < 5)){
+            cardIndex+=1;
+            setCardMove(cardIndex*(cardWidth + 20));
         }
-        if (touchStart - touchEnd < width/2) {
-            if(cardIndex > 0){
-                console.log(cardWidth,cardIndex);
-                setCardIndex((index)=>index-1);
-            }
+        if((touchStart - touchEnd < 0) && (cardIndex >= 0)){
+            cardIndex-=1;
+            setCardMove(cardIndex*(cardWidth + 20));
         }
     }
+    
     const showCards = (items) => {
         return(
             <>
@@ -70,13 +76,14 @@ export const Reviews = () => {
             </div>
             {(width > 768) ? <>{showCards(reviewItems)}</>:<> 
             <div
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchEnd}
-            onTouchEnd={handleTouchMove}
-            className="card-box" >
+            className="card-box"
+            onTouchStart={(el)=>startTouchEvent(el)}
+            onTouchEnd={(el)=>endtTouchEvent(el)}
+            onTouchMove={(el)=>moveTouchEvent(el)}
+            >
                 <div
                 style={
-                    {transform: `translateX(-${cardIndex*(cardWidth + 20)}px)`}
+                    {transform: `translateX(-${cardMove}px)`}
                 }
                 className="box"
                 >
