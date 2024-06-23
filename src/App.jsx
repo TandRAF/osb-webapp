@@ -5,7 +5,7 @@ import { Layout } from './Layout';
 
 function App() {
   return (
-    <Routes basename='osb-timisoara.org'>
+    <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="despre-noi" element={<AboutUs />} />
