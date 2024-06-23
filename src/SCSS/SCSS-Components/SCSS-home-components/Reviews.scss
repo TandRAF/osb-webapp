@@ -142,6 +142,10 @@
             height: conv(45px, 60px, "lg");
             border-radius: 50%;
             background-size: cover;
+            @include md{
+                width: conv(65px, 80px, "md");
+                height: conv(65px, 80px, "md");
+            }
         }
         .name-status{
             display: flex;

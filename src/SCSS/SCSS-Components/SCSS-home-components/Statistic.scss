@@ -52,6 +52,7 @@
             background-size: cover;
             box-sizing: content-box;
             @include sm{
+                gap: 3px;
                 width: conv(50px, 100px ,"sm");
                 height: conv(50px, 100px ,"sm");
                 padding: conv(20px, 40px, "sm");
@@ -60,7 +61,7 @@
                 @include font(conv(50px, 75px,"xl"), "Black", 100%);
                 color: $block-color;
                 @include sm{
-                    @include font(conv(32px,50px,"sm"), "Black", 100%);
+                    @include font(conv(40px,80px,"sm"), "Black", 100%);
                     color: $block-color;
                 }
                 span{
@@ -68,10 +69,10 @@
                 }
             }
            h3{
-            @include font(conv(10px,24px,"sm"), "Black", 100%);
+            @include font(conv(10px,32px,"sm"), "Black", 100%);
             color:$backround-color;
             @include sm{
-                @include font(conv(10px,24px,"sm"), "SemiBold", 100%);
+                @include font(conv(10px,32px,"sm"), "SemiBold", 100%);
                 color:$backround-color;
             }
            }
