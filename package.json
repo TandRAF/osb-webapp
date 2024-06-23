@@ -1,7 +1,7 @@
 {
   "name": "osb-webapp",
   "private": true,
-  "homepage": "https://osb-timisoara.org/",
+  "homepage": "https://osb-timisoara.org",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
