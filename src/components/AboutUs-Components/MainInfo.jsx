@@ -1,7 +1,6 @@
 import "../../SCSS/SCSS-Components/SCSS-about-us-Componets/MainInfo.scss"
 import {Crown} from "../../assets/Icons/Icons"
 export const MainInfo = () => {
-  document.body.style.backgroundImage = "none";
   return (
     <div className="main-title-description">
       <Crown/>

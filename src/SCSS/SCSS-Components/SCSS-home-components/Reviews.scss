@@ -78,7 +78,9 @@
     scroll-snap-align: start;
     overflow: visible;
     z-index: 8;
+    filter:drop-shadow(6px 10px 60px rgba(0.516,0.434,0,0.10));
     @include sm{
+        filter: none;
         height: auto;
         justify-content: space-between;
     }
