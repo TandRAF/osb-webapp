@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 40px;
-    height: fit-content;
+    height: 70vh;
     align-items: center;
     row-gap: 40px;
     @include lg{

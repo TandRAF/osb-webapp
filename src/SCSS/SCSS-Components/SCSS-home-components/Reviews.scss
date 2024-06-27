@@ -66,9 +66,8 @@
 .card{
     display: flex;
     flex-direction: column;
-    width: conv(200px,300px,"xl");
     height: max-content;
-    padding: conv(20px, 40px, "xl");
+    padding: conv(20px, 30px, "xl");
     border-radius: 5px;
     box-sizing: content-box;
     gap: 20px;
@@ -87,6 +86,7 @@
     @include md{
         position: relative;
         align-self: normal !important;
+        height: calc(100% - 40px)
     }
     p{
         @include font(conv(16px,18px,"xl"), "Regular", 150%);
