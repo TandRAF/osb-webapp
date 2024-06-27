@@ -23,6 +23,7 @@
         justify-content: space-between;
         justify-content: center;
         align-items: center;
+        height: fit-content;
     }
     @include sm{
         grid-template-columns: conv(0px,620px,"sm");
