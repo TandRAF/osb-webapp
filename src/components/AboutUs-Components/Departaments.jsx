@@ -19,13 +19,13 @@ const DepartamentText = [
     },
     {
         nr: 4,
-        name: "Departamentul de Fundraising și Proiecte",
+        name: "Departamentul de Proiecte și Fundrainsing",
         description: "Departamentul Proiecte și Fundraising (FR) este partea cea mai rațională a organizației noastre, unde membrii au ocazia să analizeze și să identifice necesitățile financiare ale asociației pe baza bugetului fiecărui eveniment și în funcție de gradul de importanță al acestuia."
     },
     {
         nr: 5,
-        name: "Departamentul de Social-Educațional",
-        description: "Departamentul Social-Educațional (SE) se orientează pe soluționarea problemelor studenților pe care îi reprezintă, încercând să ne implicăm activ în cadrul mediului universitar. Departamentul reprezintă vocea studenților basarabeni din Timișoara, întrucât are misiunea de a forma o punte de comunicare între studenți și universitate"
+        name: "Departamentul Social-Educațional",
+        description: "Departamentul Social-Educațional (SE) se orientează pe soluționarea problemelor studenților pe care îi reprezintă, implicându-se activ în cadrul mediului universitar. Departamentul reprezintă vocea studenților români de pretutinden, cetățeni ai Republicii Moldova din Timișoara, întrucât are misiunea de a forma o punte de comunicare între studenți și universitate."
     },
 ]
 

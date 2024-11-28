@@ -21,6 +21,17 @@ import LogoLS from "../assets/Images/Events-Logos/LogoLS.png"
 import LogoCM from "../assets/Images/Events-Logos/LogoCM.png"
 import LogoTB from "../assets/Images/Events-Logos/LogoTB.png"
 import LogoGala from "../assets/Images/Events-Logos/LogoGala.png"
+//Biroul de Conducere
+import GR from "../assets/BC Images/Grosu_Rafael.jpg";
+import BC from "../assets/BC Images/Bivol_Cristian.jpg";
+import VD from "../assets/BC Images/Voluta_Daniil.jpg";
+import WG from "../assets/BC Images/Wanessa_Grati.jpg";
+import MO from "../assets/BC Images/Maria_Osovschi.jpg";
+import AS from "../assets/BC Images/Ana-Maria_Sava.jpg";
+import JD from "../assets/BC Images/Juc_Daniela.jpg";
+import VID from "../assets/BC Images/Vacant.png";
+
+
 
 export const menuItem = [
     {
@@ -207,69 +218,90 @@ export const menuItem = [
 
   export const BcMembers = [
     {
-      name:"Sava Ana Maria",
-      status: "Președinte",
-      img: AnaMariaImg
-    },
-    {
       name:"Wanessa Grati",
+      status: "Președinte",
+      img: WG
+    },
+    {
+      name:"Daniil Voluța",
       status: "Secretar General",
-      img: Wanessa
+      img: VD
     },
     {
-      name:"Cătălina-Delia Vătămănescu",
-      status: "Vicepreședinte Fundraising și Proiecte",
-      img: Delia
+      name:"Post Vacant",
+      status: "Vicepreședinte Proiecte și Fundraising",
+      img: VID
     },
     {
-      name:"Evelina Cebotari",
+      name:"Daniela Juc",
       status: "Vicepreședinte Social-Educațional",
-      img: EvelinaImg
+      img: JD
     },
     {
-      name:"Cristina-Mădălina Mîslițchi",
+      name:"Cristian Bivol",
       status: "Vicepreședinte Resurse Umane",
-      img: Cristina
+      img: BC
     },
     {
-      name:"Adelina Tulburi",
+      name:"Maria Oșovschi",
       status: "Vicepreședinte Relații Publice",
-      img: Adelina
+      img: MO
     },
     {
-      name:"Ana-Maria Topală",
+      name:"Rafael Grosu",
       status: "Vicepreședinte Imagine-IT",
-      img: AnaMariaTopala
+      img: GR
     },
     {
       name:"Anastasia Stolearenco",
       status: "Cenzor",
       img: Anastasia
     },
+    {
+      name:"Ana-Maria Sava",
+      status: "Cenzor",
+      img: AS
+    }
   ] 
 
   export const HistoryEvents = [
     {
-      date:"27 martie",
+      date:"27 martie 2001",
       year: 2001,
       img: Img2001,
-      event: "S-a marcat 83 de ani de la Unirea Basarabiei cu Romania, în acest sens, în premieră la Timișoara a avut loc Festivalul Cultural „Zilele Basarabiei” ediția I, eveniment care până în prezent este celebrat anual, la finalul lunii martie și reprezintă o oportunitate unică de a celebra diversitatea și frumusețea culturii din Republica Moldova, de a ne aduce aminte de tradițiile și valorile care ne definesc ca popor."
+      event: "S-au marcat 83 de ani de la Unirea Basarabiei cu Romania. În acest sens, în premieră la Timișoara a avut loc Festivalul Cultural „Zilele Basarabiei” ediția I, eveniment care până în prezent este celebrat anual, la finalul lunii martie și reprezintă o oportunitate unică de a celebra diversitatea și frumusețea culturii din Republica Moldova, de a ne aduce aminte de tradițiile și valorile care ne definesc ca popor."
     },
     {
       date:"3 Mai",
       year: 2001,
       img: "none",
-      event: " în această zi pentru a fost înființată legal organizația, care astăzi poartă denumirea de Organizația Studenților Basarabeni din Timișoara (OSB Tm), însă pentru prima dată organizația a apărut sub numele Asociația Studenților Basarabeni Creștini din Timișoara (ASBCT);"
+      event: "A fost înființată legal organizația care astăzi este cunoscută sub numele de Organizația Studenților Basarabeni din Timișoara (OSB Timișoara). Inițial, aceasta a fost înregistrată sub denumirea de Asociația Studenților Basarabeni Creștini din Timișoara (ASBCT)."
     },
     {
       date:"",
       year: 2006,
       img: ImgFZB,
-      event: " acest an s-a marcat prin schimbarea denumirii organizației, anul în care a apărut Organizația Studenților Basarabeni din Timișoara, denumire pe care o avem și astăzi."
+      event: "Organizația și-a schimbat denumirea, devenind Organizația Studenților Basarabeni din Timișoara, nume pe care îl poartă și în prezent."
     },{
       date:"1 martie",
       year: 2009,
       img: Img2009,
-      event: "Organizația Studenților Basarabeni din Timișoara a aderat la Alianța Națională a Organizațiilor Studențești din România, iar în 2011 am devenit membri cu drept de vot în federație"
+      event: "OSB Timișoara a aderat la Alianța Națională a Organizațiilor Studențești din România (ANOSR)."
+    }
+    ,{
+      date:"",
+      year: 2011,
+      img: Img2009,
+      event: "OSB Timișoara a devenit membru cu drept de vot în cadrul Alianței Naționale a Organizațiilor Studențești din România (ANOSR)."
+    },{
+      date:"6 iulie",
+      year: 2022,
+      img: Img2009,
+      event: "OSB Timișoara a devenit membru candidat în cadrul Federației Tinerilor Basarabeni din România (FTB)."
+    },{
+      date:"12 august",
+      year: 2023,
+      img: Img2009,
+      event: "OSB Timișoara a devenit membru cu drept de vot în cadrul Federației Tinerilor Basarabeni din România (FTB)."
     }
   ]

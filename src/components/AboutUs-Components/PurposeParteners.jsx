@@ -8,21 +8,14 @@ import "../../SCSS/SCSS-Components/SCSS-about-us-Componets/Purpose.scss";
 export const PurposeParteners = () => {
   return (
     <section className="purpose-more-info">
-        <div className="purpose-scope-info">
-          <Stars/>
-          <h3><b>Scopul</b> nostru </h3>
-          <p>
-          Scopul principal al OSB Timișoara este integrarea și reprezentarea tinerilor din Republica Moldova, veniți la studii în Timișoara prin organizarea proiectelor de ordin cultural, educativ și divertisment.
-          </p>
-        </div>
         <div className="main-parteners-info">
         <Stars/>
-          <h3>Facem <b>parte</b> din</h3>
+          <h2>Facem <b>parte</b> din</h2>
           <div className="parteners-logos">
               <img src={Anosr} alt="ANOSR" />
-              <img src={COSPol} alt="COSPol" />
-              <img src={FITT} alt="FITT" />
               <img src={FTB} alt="FTB" />
+              <img src={FITT} alt="FITT" />
+              <img src={COSPol} alt="COSPol" />
           </div>
         </div>
       </section>

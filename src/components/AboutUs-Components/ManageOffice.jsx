@@ -1,8 +1,10 @@
 import "../../SCSS/SCSS-Components/SCSS-about-us-Componets/ManageOffice.scss"
 import { BcMembers } from "../../assets/content"
+import { Crown } from "../../assets/Icons/Icons"
 export const ManageOffice = () => {
   return (
     <section className="bc-members-container">
+        <Crown></Crown>
         <h2>Biroul de <b>Conducere</b></h2>
         <div className="bc-members-blocks">
             {BcMembers.map((item, index)=>{

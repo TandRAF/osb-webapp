@@ -6,7 +6,7 @@ export const History = () => {
       <section className="history-container">
         <Stars/>
         <h2> <b>Istoric</b></h2>
-        <p>OSB Timișoara - Organizația Studenților Basarabeni din Timișoara a luat naștere ca rezultat al implicării și dorinței de a uni studenții basarabeni din Timișoara într-o comunitate solidă.</p>
+        <p><b>OSB Timișoara</b> a luat naștere ca rezultat al implicării și dorinței de a uni studenții basarabeni din Timișoara într-o comunitate solidă.</p>
         <div className="history-blocks">
             {HistoryEvents.map((item,index)=>{
                 return(
