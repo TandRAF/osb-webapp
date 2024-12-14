@@ -1,6 +1,6 @@
 import './SCSS/App.scss';
 import {Routes, Route } from "react-router-dom";
-import {Home,AboutUs,Events,NoPage,Contacte} from "./pages/Pages";
+import {Home,AboutUs,NoPage,Contacte} from "./pages/Pages";
 import { Layout } from './Layout';
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="despre-noi" element={<AboutUs />} />
-        <Route path="evenimente" element={<Events />} />
          <Route path="contacte" element={<Contacte/>}/>
         <Route path="*" element={<NoPage />} />
       </Route>

@@ -46,11 +46,6 @@ export const menuItem = [
     },
     {
       key: 3,
-      title: "Evenimente",
-      link: "/evenimente"
-    },
-    {
-      key: 4,
       title: "Contacte",
       link: "/contacte"
     }
@@ -212,7 +207,7 @@ export const menuItem = [
       key: 3,
       icon: Location,
       title: "Locația",
-      info: "osb_timisoara.gmail.ro"
+      info: " Str. Ripensia, cămin 16"
     }
   ]
 

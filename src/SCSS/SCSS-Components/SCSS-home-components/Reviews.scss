@@ -66,7 +66,6 @@
 .card{
     display: flex;
     flex-direction: column;
-    height: max-content;
     padding: conv(20px, 30px, "xl");
     border-radius: 5px;
     box-sizing: content-box;
@@ -77,16 +76,19 @@
     scroll-snap-align: start;
     overflow: visible;
     z-index: 8;
+    height: max-content;
     filter:drop-shadow(6px 10px 60px rgba(0.516,0.434,0,0.10));
+    @include md{
+        position: relative;
+        align-self: normal !important;
+        height: calc(100% - 40px);
+    }
     @include sm{
         filter: none;
         height: auto;
         justify-content: space-between;
-    }
-    @include md{
-        position: relative;
-        align-self: normal !important;
-        height: calc(100% - 40px)
+        min-height: 100%;
+        height: auto;
     }
     p{
         @include font(conv(16px,18px,"xl"), "Regular", 150%);
